@@ -22,6 +22,7 @@ Icon
 # Windows
 ############################
 
+build/Release
 Thumbs.db
 ehthumbs.db
 Desktop.ini
@@ -82,6 +83,7 @@ ssl
 nbproject
 public/uploads/*
 !public/uploads/.gitkeep
+typings/
 
 ############################
 # Node.js
@@ -93,7 +95,14 @@ pids
 logs
 results
 node_modules
+jspm_packages
 .node_history
+.lock-wscript
+.npm
+npm-debug.log*
+.node_repl_history
+*.tgz
+
 
 ############################
 # Tests
@@ -101,6 +110,10 @@ node_modules
 
 testApp
 coverage
+.nyc_output
+bower_components
+.grunt
+.eslintcache
 
 ############################
 # Strapi
@@ -112,3 +125,17 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+############################
+# Gatsby
+############################
+
+.env.development
+.env.production
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+.pnp/
+.pnp.js
+/frontend/.cache/
+/frontend/public
