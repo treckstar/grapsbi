@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 import ArticlesGrid from "../components/articles-grid"
 import Seo from "../components/seo"
 import Headings from "../components/headings"
@@ -22,7 +23,8 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Seo seo={{ metaTitle: "Home" }} />
+      <Seo seo={{ metaTitle: "Home", metaDescription: "Aggressive Cache" }} />
+      <Hero />
       <Headings
         title={strapiGlobal.siteName}
         description={strapiGlobal.siteDescription}

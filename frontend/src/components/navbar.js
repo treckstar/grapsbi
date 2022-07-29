@@ -1,20 +1,26 @@
-import { Link } from "gatsby"
 import React from "react"
+import logo from "../assets/logo.svg"
+import PageLinks from "../constants/links"
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
   return (
-    <header className="bg-primary-200">
-      <nav className="container flex flex-row items-baseline justify-between py-6">
-        <Link to="/" className="text-xl font-medium">
-          Blog
-        </Link>
-        <div className="flex flex-row items-baseline justify-end">
-          <Link className="font-medium" to="/about">
-            About
-          </Link>
+    <nav className="navbar">
+      <div className="nav-center">
+        <div className="nav-header">
+          <img className="logo" src={logo} alt="logo" />
+          <button
+            type="button"
+            className="toggle-btn"
+            aria-label="Toggle Sidebar"
+            onClick={toggleSidebar}
+          ></button>
         </div>
-      </nav>
-    </header>
+        <PageLinks
+          aria-label="Navigation Links"
+          styleClass="nav-links"
+        ></PageLinks>
+      </div>
+    </nav>
   )
 }
 

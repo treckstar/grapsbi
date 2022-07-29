@@ -132,6 +132,7 @@ build
 
 .env.development
 .env.production
+.env.local
 yarn-debug.log*
 yarn-error.log*
 .yarn-integrity
