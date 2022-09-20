@@ -1,27 +1,26 @@
 import React from "react";
 import { Link } from "gatsby";
 import cx from 'classnames'
-import HeroPopover from "../components/hero-popover";
 import {
-  navLinks,
-  navLinksA,
-  navLinksLi
-} from '../components/navbar.module.scss';
+  sidebarLinks,
+  sidebarLinksA,
+  sidebarLinksLi
+} from '../components/sidebar.module.scss';
 const data = [
   {
     id: 1,
-    text: "meta",
-    url: "/meta/",
+    text: "home",
+    url: "/",
   },
   {
     id: 2,
-    text: "changelog",
-    url: "/changelog/",
+    text: "about",
+    url: "/about/",
   },
   {
     id: 3,
-    text: "reference",
-    url: "/reference/",
+    text: "projects",
+    url: "/projects/",
   },
   {
     id: 4,
@@ -37,8 +36,8 @@ const data = [
 
 const tempLinks = data.map((link) => {
   return (
-    <li className={navLinksLi} key={link.id}>
-      <Link className={navLinksA} to={link.url}>{link.text}</Link>
+    <li className={sidebarLinksLi} key={link.id}>
+      <Link className={sidebarLinksA} to={link.url}>{link.text}</Link>
     </li>
   );
 });
@@ -46,8 +45,7 @@ const tempLinks = data.map((link) => {
 
 export default ({ styleClass }) => {
   return (
-    <ul className={navLinks}>
-      <li className={navLinksLi}><HeroPopover /></li>
+    <ul className={sidebarLinks}>
       {tempLinks}
     </ul>
   );

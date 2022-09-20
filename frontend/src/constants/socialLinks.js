@@ -1,44 +1,37 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react"
-// import {
-//   FaFacebookSquare,
-//   FaLinkedin,
-//   FaDribbbleSquare,
-//   FaBehanceSquare,
-//   FaTwitterSquare,
-// } from "react-icons/fa"
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaStackOverflow } from "@react-icons/all-files/fa/FaStackOverflow";
+import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import cx from 'classnames'
 
 const data = [
   {
     id: 1,
-    icon: "",
-    url: "https://www.twitter.com",
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/treckstar/",
   },
   {
     id: 2,
-    icon: "",
-    url: "https://www.twitter.com",
+    icon: <FaGithub />,
+    url: "https://github.com/treckstar",
   },
   {
     id: 3,
-    icon: "",
-    url: "https://www.twitter.com",
+    icon: <FaStackOverflow />,
+    url: "https://stackoverflow.com/users/1712345/treckstar",
   },
   {
     id: 4,
-    icon: "",
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: "",
-    url: "https://www.twitter.com",
+    icon: <FaTwitter />,
+    url: "https://www.twitter.com/treckstar",
   },
 ]
 const links = data.map((link) => {
   return (
     <li key={link.id}>
-      <a href={link.url} className="social-link">
+      <a href={link.url} className="social-link" target="_blank">
         {link.icon}
       </a>
     </li>
@@ -47,6 +40,6 @@ const links = data.map((link) => {
 
 export default ({ styleClass }) => {
   return (
-    <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+    <ul className={`social-links ${styleClass ? cx(styleClass) : ""}`}>{links}</ul>
   )
 }
