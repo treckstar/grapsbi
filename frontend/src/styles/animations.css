@@ -1,0 +1,468 @@
+.eye-opacity {
+    -webkit-font-smoothing: antialiased;
+    animation: blink_opacity 10s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+.right-eye-transform {
+    -webkit-font-smoothing: antialiased;
+    animation: blink_right 10s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+.left-eye-transform {
+    -webkit-font-smoothing: antialiased;
+    animation: blink_left 10s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+.phone-finger-up {
+    -webkit-font-smoothing: antialiased;
+    animation: finger_up 5s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+.right-shoe {
+    -webkit-font-smoothing: antialiased;
+    animation: bent_shoe 30s linear infinite normal;
+    transform: inherit;
+    transition: all 2s linear;
+}
+
+.right-shoe {
+    animation-delay: 50ms;
+}
+
+#al {
+    -webkit-font-smoothing: antialiased;
+    animation: bent_leg 30s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+#am {
+    -webkit-font-smoothing: antialiased;
+    animation: bent_leg_fadein 30s linear infinite normal;
+    transform: inherit;
+    transition: all .1s linear;
+}
+
+@keyframes finger_up {
+    0% {
+        opacity: 0;
+    }
+    39% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }    
+    61% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes finger_down {
+    0% {
+        opacity: 1;
+    }
+
+    39% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    61% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bent_shoe {
+    0% {
+        transform: initial;
+    }
+
+    8% {
+        transform: initial;
+    }
+
+    9% {
+        transform: matrix(1, 0, 0, 1, 60, -25);
+    }
+
+    29% {
+        transform: matrix(1, 0, 0, 1, 60, -25);
+    }
+
+    30% {
+        transform: initial;
+    }
+
+    60% {
+        transform: initial;
+    }
+
+    61% {
+        transform: matrix(1, 0, 0, 1, 60, -25);
+    }
+
+    84% {
+        transform: matrix(1, 0, 0, 1, 60, -25);
+    }
+
+    85% {
+        transform: initial;
+    }
+
+    100% {
+        transform: initial;
+    }
+}
+
+@keyframes bent_leg {
+    0% {
+        transform: initial;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    8% {
+        transform: initial;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    9% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    29% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    30% {
+        transform: initial;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    60% {
+        transform: initial;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    61% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 0;
+    }
+
+    84% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 0;
+    }
+
+    85% {
+        transform: initial;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        transform: initial;
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes bent_leg_fadein {
+    0% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+
+    8% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+
+    9% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 1;
+        /*visibility: visible;*/
+    }
+
+    29% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 1;
+        /*visibility: visible;*/
+    }
+
+    30% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+
+    60% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+
+    61% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 1;
+        /*visibility: visible;*/
+    }
+
+    84% {
+        transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
+        opacity: 1;
+        /*visibility: visible;*/
+    }
+
+    85% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+
+    100% {
+        opacity: 0;
+        /*visibility: hidden;*/
+    }
+}
+
+
+@keyframes blink_right {
+    0% {
+        transform: inherit;
+    }
+
+    9% {
+        transform: inherit;
+    }
+
+    10% {
+        transform: matrix(1, 0, 0, 1, 0.2, 3.7);
+    }
+
+    11% {
+        transform: inherit;
+    }
+
+    20% {
+        transform: inherit;
+    }
+
+    30% {
+        transform: inherit;
+    }
+
+    39% {
+        transform: inherit;
+    }
+
+    40% {
+        transform: matrix(1, 0, 0, 1, 0.2, 3.7);
+    }
+
+    41% {
+        transform: inherit;
+    }
+
+    50% {
+        transform: inherit;
+    }
+
+    60% {
+        transform: inherit;
+    }
+
+    70% {
+        transform: inherit;
+    }
+
+    80% {
+        transform: inherit;
+    }
+
+    81% {
+        transform: matrix(1, 0, 0, 1, 0.2, 3.7);
+    }
+
+    82% {
+        transform: inherit;
+    }
+
+    90% {
+        transform: inherit;
+    }
+
+    100% {
+        transform: inherit;
+    }
+}
+
+@keyframes blink_left {
+    0% {
+        transform: inherit;
+    }
+
+    9% {
+        transform: inherit;
+    }
+
+    10% {
+        transform: matrix(1, 0, 0, 1, 0, 3.4);
+    }
+
+    11% {
+        transform: inherit;
+    }
+
+    20% {
+        transform: inherit;
+    }
+
+    30% {
+        transform: inherit;
+    }
+
+    39% {
+        transform: inherit;
+    }
+
+    40% {
+        transform: matrix(1, 0, 0, 1, 0, 3.4);
+    }
+
+    41% {
+        transform: inherit;
+    }
+
+    50% {
+        transform: inherit;
+    }
+
+    60% {
+        transform: inherit;
+    }
+
+    70% {
+        transform: inherit;
+    }
+
+    80% {
+        transform: inherit;
+    }
+
+    81% {
+        transform: matrix(1, 0, 0, 1, 0, 3.4);
+    }
+
+    82% {
+        transform: inherit;
+    }
+
+    90% {
+        transform: inherit;
+    }
+
+    100% {
+        transform: inherit;
+    }
+}
+
+@keyframes blink_opacity {
+    0% {
+        opacity: 1;
+    }
+
+    9% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.05;
+    }
+
+    11% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    39% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.05;
+    }
+
+    41% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    81% {
+        opacity: 0.05;
+    }
+
+    82% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
