@@ -1,0 +1,48 @@
+
+/*
+===============
+Footer
+===============
+*/
+.footer {
+  height: 9rem;
+  background: #222;
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+.footer-h5 {
+  font-size: 10px;
+  margin-top: 0.5rem;
+  color: var(--clr-white);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.60);
+}
+.footer-h5-span {
+  color: var(--clr-primary-5);
+  font-family: var(--ff-secondary);
+}
+.footer-links {
+  margin: 0 auto 1rem auto;
+}
+.footer-social-link {
+  color: var(--clr-white);
+}
+.footer-social-link:hover {
+  color: var(--clr-primary-5);
+}
+.footer-svg {
+    color: var(--clr-white);
+    display: inline;
+    font-size: 2rem;
+}
+.footer-svg:hover {
+    color: var(--clr-primary-5);
+}
+.footer-h5-svg {
+    font-size: 1.25rem;
+    display: inline;
+    vertical-align: middle;
+}

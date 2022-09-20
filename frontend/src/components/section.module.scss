@@ -1,0 +1,22 @@
+/* section */
+.section {
+  padding: 4rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+.bg-grey {
+  background: var(--clr-grey-10);
+}
+.bg-white {
+  background: var(--clr-white);
+}

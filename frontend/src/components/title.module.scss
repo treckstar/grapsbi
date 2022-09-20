@@ -1,0 +1,29 @@
+.section-title {
+  margin-bottom: 4rem;
+  text-align: center;
+
+  h3 {
+    letter-spacing: var(--spacing);
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+    font-size: 1.55rem;
+
+    @media screen and (min-width: 992px) {
+      font-size: 2.175rem;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}

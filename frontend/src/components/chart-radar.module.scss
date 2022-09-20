@@ -1,0 +1,10 @@
+.canvas-container {
+    height: 60vh;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+    .canvas-container {
+        height: 50vh;
+    }
+}

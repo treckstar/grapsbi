@@ -1,0 +1,173 @@
+.page-stack span {
+    display: inline-block;
+    background: var(--clr-primary-10);
+    color: var(--clr-grey-3);
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.page-stack span {
+    margin-top: 0.5rem;
+}
+
+.page {
+    background: var(--clr-grey-10);
+    min-height: calc(100vh - 5rem - 9rem);
+}
+
+.page {
+    padding: 7rem 0;
+}
+
+.page-img {
+    margin-bottom: 2rem;
+    height: 25rem;
+}
+
+.page-text .section-title {
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.page .underline {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.page-left-h3 {
+    margin-bottom: 0;
+}
+
+.page-left-h3,
+.page-left-h3 h3 {
+    text-align: left;
+
+    .underline {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.page-text p {
+    line-height: 2;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+
+.stack-container {
+    width: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0.5rem;
+}
+
+.stack-container span {
+    /* text-transform: capitalize; */
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    color: var(--clr-grey-4);
+}
+
+.stack-icon {
+    color: var(--clr-primary-5);
+    margin-right: 0.25rem;
+    font-size: 1rem;
+}
+
+.quote-center {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+#single-quote {
+    text-align: center;
+    align-self: center;
+}
+
+#single-quote>.fa-quote-left {
+    // float: left;
+    font-size: 2em;
+}
+
+#single-quote>p {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    align-self: center;
+    justify-content: space-around;
+    margin: 0 1em;
+    line-height: 1.5em;
+}
+
+// .about-steve {
+
+// }
+
+@media screen and (min-width: 992px) {
+    .page-center {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        column-gap: 4rem;
+    }
+
+    .page-img {
+        grid-column: 1 / span 5;
+        margin-bottom: 0;
+    }
+
+    .page-text {
+        grid-column: 6 / -1;
+    }
+
+    .quote-center {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #single-quote {
+        text-align: center;
+        align-self: center;
+    }
+
+    #single-quote>.fa-quote-left {
+        float: left;
+        font-size: 2em;
+    }
+
+    #single-quote>p {
+        font-weight: 500;
+        font-size: 25px;
+        text-align: center;
+        font-style: italic;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+        align-self: center;
+        justify-content: space-around;
+        margin: 0 3em;
+        line-height: 1.5em;
+    }
+
+    // .about-steve {
+    //     float: right;
+    // }
+}

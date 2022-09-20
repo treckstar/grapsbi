@@ -1,0 +1,25 @@
+// .blog {
+//   display: block;
+//   margin-bottom: 2rem;
+//   background: var(--clr-white);
+//   border-radius: var(--radius);
+//   box-shadow: var(--light-shadow);
+//   transition: var(--transition);
+// }
+// .blog:hover {
+//   box-shadow: var(--dark-shadow);
+//   transform: scale(1.03);
+// }
+// .blog article {
+//   height: 100%;
+//   display: grid;
+//   grid-template-rows: auto 1fr;
+// }
+
+.blog-wrapper {
+    @apply overflow-hidden rounded-lg bg-white shadow-sm transition-shadow mb-3 hover:shadow-md
+}
+
+.blog-wrapper:hover {
+    @apply shadow-md
+}
