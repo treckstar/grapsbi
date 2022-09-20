@@ -3,22 +3,22 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: "smtp.gmail.com",
-        port: 587,
+        host: env("SMTP_HOST"),
+        port: env("SMTP_PORT"),
         //secure: true,
         //requireTLS: true,
         secureConnection: false, // TLS requires secureConnection to be false
         auth: {
-          user: "aggressivecache@gmail.com",
-          pass: "ktskihwcrmdndlwr",
+          user: env("SMTP_USER"),
+          pass: env("SMTP_PASS"),
         },
         /* tls: {
             ciphers:'SSLv3'
         }, */
       },
       settings: {
-        defaultFrom: "aggressivecache@gmail.com",
-        defaultReplyTo: "aggressivecache@gmail.com",
+        defaultFrom: env("SMTP_DEFAULT_FROM"),
+        defaultReplyTo: env("SMTP_DEFAULT_REPLYTO"),
       },
     },
   },
