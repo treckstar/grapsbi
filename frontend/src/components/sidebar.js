@@ -1,23 +1,34 @@
 import React from "react"
-import Links from "../constants/links"
+import Links from "../constants/linksaside"
 import SocialLinks from "../constants/socialLinks"
-
+import { FaTimes } from "@react-icons/all-files/fa/FaTimes";
+import cx from 'classnames'
+import {
+  sidebar,
+  showSidebar,
+  sidebarLinks,
+  sidebarIcons,
+  closeBtn
+} from './sidebar.module.scss';
 const Sidebar = ({ isOpen, toggleSidebar }) => {
+
   return (
-    <aside className={`sidebar ${isOpen ? "show-sidebar" : ""}`}>
+    <aside className={` ${isOpen ? cx(sidebar, showSidebar) : sidebar}`}>
       <button
         aria-label="Close Button"
-        className="close-btn"
+        className={closeBtn}
         onClick={toggleSidebar}
-      ></button>
-      <div className="side-container">
+      >
+        <FaTimes />
+      </button>
+      <div>
         <Links
           aria-label="Sidebar Links"
-          styleClass={`${isOpen ? "sidebar-links" : ""}`}
+          styleClass=""
         />
         <SocialLinks
           aria-label="Social Links"
-          styleClass={`${isOpen ? "sidebar-icons" : ""}`}
+          styleClass="sidebar-icons"
         />
       </div>
     </aside>
