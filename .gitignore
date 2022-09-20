@@ -141,3 +141,4 @@ yarn-error.log*
 .pnp.js
 /frontend/.cache/
 /frontend/public
+.vscode

@@ -1,11 +1,14 @@
 {
-  "name": "strapi-blog",
+  "name": "treckstar-net-blog",
+  "author": "Brandon Trecki <treckstar@gmail.com> (https://treckstar.net/)",
+  "description": "Monorepo with Strapi & Gatsby",
+  "version": "2.0.0",
+  "license": "ISC",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
+    "develop": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*",
     "develop:backend": "yarn --cwd backend develop",
-    "develop:frontend": "wait-on http://localhost:2337/admin && yarn --cwd frontend develop",
-    "develop": "cross-env FORCE_COLOR=1 npm-run-all -l -p develop:*"
+    "develop:frontend": "wait-on http://localhost:2337/admin && yarn --cwd frontend develop"
   },
   "devDependencies": {
     "cross-env": "7.0.3",

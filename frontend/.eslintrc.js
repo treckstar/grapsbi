@@ -12,7 +12,7 @@ module.exports = {
         singleQuote: false,
         trailingComma: "es5",
         semi: false,
-        tabWidth: 2,
+        tabWidth: 4,
       },
     ],
   },

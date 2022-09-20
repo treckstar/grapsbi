@@ -1,4 +1,15 @@
 {
+  "name": "treckstar-net-strapi",
+  "private": true,
+  "description": "Fresh update to website powered by Strapi.",
+  "version": "4.0.0",
+  "author": "Brandon Trecki <treckstar@gmail.com>",
+  "scripts": {
+    "develop": "NODE_ENV=development strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
   "dependencies": {
     "@strapi/plugin-graphql": "^4.0.5",
     "@strapi/plugin-i18n": "4.2.3",
@@ -10,20 +21,7 @@
     "mime-types": "^2.1.27",
     "mysql": "2.18.1"
   },
-  "name": "backend",
-  "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
-  "scripts": {
-    "develop": "NODE_ENV=development strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
-    "strapi": "strapi"
-  },
   "devDependencies": {},
-  "author": {
-    "name": "A Strapi developer"
-  },
   "strapi": {
     "uuid": "5bfcb9a2-f696-405e-ba9a-45fbae28aebb",
     "template": "@strapi/template-blog@^2.0.0",
