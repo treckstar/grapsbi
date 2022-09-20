@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="914.05157"
+   height="235.14836"
+   viewBox="0 0 914.05157 235.14836"
+   version="1.1"
+   id="svg5"
+   xmlnsXlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnssvg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="2"
+       height="1"
+       patternTransform="translate(0,0) scale(10,10)"
+       id="Strips1_1">
+      <rect
+         style="fill:black;stroke:none"
+         x="0"
+         y="-0.5"
+         width="1"
+         height="2"
+         id="rect35603" />
+    </pattern>
+    <linearGradient
+       id="linearGradient38811">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop38809" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient38793">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop38789" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop38791" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient34615">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop34611" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop34613" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient38793"
+       id="linearGradient38797"
+       x1="346.89471"
+       y1="219.48947"
+       x2="1632.6943"
+       y2="219.48947"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB"
+       id="filter69532"
+       x="-0.0054341113"
+       y="-0.037294842"
+       width="1.0108682"
+       height="1.0745897">
+      <feTurbulence
+         type="fractalNoise"
+         numOctaves="3"
+         baseFrequency="1"
+         seed="0"
+         result="result0"
+         id="feTurbulence69522" />
+      <feColorMatrix
+         result="result4"
+         values="0"
+         type="saturate"
+         id="feColorMatrix69524" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result4"
+         operator="arithmetic"
+         k1="1.25"
+         k2="0.5"
+         k3="0.5"
+         result="result2"
+         id="feComposite69526"
+         k4="0" />
+      <feBlend
+         result="result5"
+         mode="normal"
+         in="result2"
+         in2="SourceGraphic"
+         id="feBlend69528" />
+      <feComposite
+         in="result5"
+         in2="SourceGraphic"
+         operator="in"
+         result="fbSourceGraphic"
+         id="feComposite69530" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix75002" />
+      <feGaussianBlur
+         id="feGaussianBlur75004"
+         result="result1"
+         in="fbSourceGraphic"
+         stdDeviation="1.3" />
+      <feTurbulence
+         id="feTurbulence75006"
+         result="result0"
+         numOctaves="4"
+         baseFrequency="0.034" />
+      <feDisplacementMap
+         in2="result0"
+         id="feDisplacementMap75008"
+         result="result2"
+         scale="19.6"
+         yChannelSelector="G"
+         xChannelSelector="R"
+         in="result1" />
+      <feColorMatrix
+         id="feColorMatrix75010"
+         values="2 0 0 0 0 0 2 0 0 0 0 0 2 0 0 0 0 0 0.7 0"
+         result="result3" />
+      <feGaussianBlur
+         id="feGaussianBlur75012"
+         result="result4"
+         in="fbSourceGraphic"
+         stdDeviation="1.1" />
+      <feComposite
+         in2="result3"
+         id="feComposite75014"
+         in="result4" />
+    </filter>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-95.891443,-308.5543)">
+    <text
+       xmlSpace="preserve"
+       style="font-style:normal;font-weight:normal;font-size:167.204px;line-height:0.75;font-family:sans-serif;fill:none;fill-opacity:1;stroke:none;paint-order:markers fill stroke"
+       x="337.19687"
+       y="281.52216"
+       id="text2036"
+       transform="scale(0.78729983,1.2701641)"><tspan
+         id="tspan2034"
+         x="337.19687"
+         y="281.52216"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Code iScript';baseline-shift:baseline;fill:none;fill-opacity:1;stroke:none;paint-order:markers fill stroke">treckstar.net</tspan></text>
+    <text
+       xmlSpace="preserve"
+       style="font-style:normal;font-weight:normal;font-size:199.027px;line-height:1.25;font-family:sans-serif;letter-spacing:-39.2123px;white-space:pre;inline-size:1503.12;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.97568;"
+       x="360.50446"
+       y="463.63376"
+       id="text2036-7"
+       transform="matrix(0.83689062,0.01843694,0.10442494,1.2978243,-242.68996,-96.387337)"><tspan
+         x="360.50446"
+         y="463.63376"
+         id="tspan958"><tspan
+           style="font-weight:bold;font-family:'Fira Code iScript';"
+           id="tspan956">treckstar.net</tspan></tspan></text>
+  </g>
+</svg>
