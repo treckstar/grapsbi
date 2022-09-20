@@ -1,0 +1,58 @@
+import React, { useRef, forwardRef, useState } from 'react'
+import { Link } from "gatsby"
+import classnames from 'classnames/bind'
+import { gsap } from 'gsap'
+import { motion } from "framer-motion";
+
+import {
+    button,
+    fullWidth,
+    disabled,
+    hoverCircle,
+    shadow,
+    background,
+    theme,
+    buttonLink,
+    buttonContainer,
+    marketWhite
+} from './button.module.scss'
+import css from './button.module.scss'
+const cx = classnames.bind(css)
+
+const Button = ({ label }) => {
+
+    const [isHovered, setHovered] = useState(false)
+
+    function onComplete() {
+      console.log("Animation completed")
+    }
+
+    function onUpdate(latest) {
+      console.log(latest.z, latest.opacity)
+    }
+
+    return (
+      <div className={cx(className, size, buttonContainer)}>
+        <div className={cx(button, theme, buttonWrapperClassName)}>
+          <motion.span  className={shadow} animate={{ opacity: isHovered ? 1 : 0 }} transition={{ type: "spring", bounce: 0.10, damping: 25 }} />
+          <motion.div className={cx(background, theme)} animate={{ transformPerspective: 800, z: (isHovered ? 40 : 0) }} transition={{ type: "spring", damping: 10,  stiffness: 400 }}>
+            <motion.div className={hoverCircle} initial={{opacity: 0}} animate={{ opacity: isHovered ? [0.50, 0] : 0, transformPerspective: 15, z: -90 + 100 * (isHovered ? 1 : 0) }} transition={{ type: "spring", bounce: 0.1, duration: .45, restSpeed: 1, restDelta: 1 }}  onAnimationComplete={definition => {
+                console.log('Completed animating', definition)
+                }}  onUpdate={onUpdate} />
+          </motion.div>
+          <button
+            className={cx(buttonLink, buttonClassName)}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            onFocus={() => setHovered(true)}
+            onBlur={() => setHovered(false)}
+            >
+                { label || "Button" }
+            
+          </button>
+        </div>
+      </div>
+    )
+  }
+  
+export default Button

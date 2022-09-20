@@ -1,0 +1,116 @@
+.st0 {
+    fill: #E0E0E0;
+}
+
+.st1 {
+    fill: #EBEBEB;
+}
+
+.st2 {
+    fill: #FAFAFA;
+}
+
+.st3 {
+    fill: #F5F5F5;
+}
+
+.st4 {
+    fill: #FFFFFF;
+}
+
+.st5 {
+    fill: none;
+}
+
+.st6 {
+    display: none;
+}
+
+.st7 {
+    display: inline;
+    fill: #EBEBEB;
+}
+
+.st8 {
+    fill: #455A64;
+}
+
+.st9 {
+    fill: #263238;
+}
+
+.st10 {
+    fill: #62CC9A;
+}
+
+.st11 {
+    opacity: 0.2;
+}
+
+.st12 {
+    opacity: 0.3;
+}
+
+.st13 {
+    fill: #B78876;
+}
+
+.st14 {
+    fill: #AA6550;
+}
+
+.hood0 {
+    fill: #EBEBEB;
+}
+
+.hood1 {
+    fill: #FAFAFA;
+}
+
+.hood2 {
+    fill: #E8505B;
+}
+
+.hood3 {
+    fill: #62CC9A;
+}
+
+.hood4 {
+    fill: #263238;
+}
+
+.hood5 {
+    opacity: 0.3;
+}
+
+.hood6 {
+    fill: #FFBE9D;
+}
+
+.hood7 {
+    fill: #EB996E;
+}
+
+.hood8 {
+    fill: #FFFFFF;
+}
+
+.hood9 {
+    fill: #49AA79;
+}
+
+.hood10 {
+    fill: #206340;
+}
+
+.hood11 {
+    fill: #455A64;
+}
+
+.hood12 {
+    fill: #E0E0E0;
+}
+
+.hood13 {
+    opacity: 0.5;
+}
