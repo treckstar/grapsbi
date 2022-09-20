@@ -5,11 +5,20 @@ import Seo from "../components/seo"
 import Title from "../components/title";
 import BlocksRenderer from "../components/blocks-renderer"
 import Headings from "../components/headings"
+import {
+    page,
+    pageCenter,
+    sectionCenter,
+    pageText,
+    pageImg,
+    pageLeftH3,
+    underline,
+} from './page.module.scss'
 
-const AboutPage = () => {
-  const { strapiAbout } = useStaticQuery(graphql`
+const ChangelogPage = () => {
+  const { strapiChangelog } = useStaticQuery(graphql`
     query {
-      strapiAbout {
+      strapiChangelog {
         title
         blocks {
           ...Blocks
@@ -17,29 +26,28 @@ const AboutPage = () => {
       }
     }
   `)
-  const { aboutTitle, blocks } = strapiAbout
+  const { changelogTitle, blocks } = strapiChangelog
 
   const seo = {
-    metaTitle: aboutTitle,
-    metaDescription: aboutTitle,
+    metaTitle: changelogTitle,
+    metaDescription: changelogTitle,
   }
 
   return (
     <Layout>
-      <Seo seo={{ metaTitle: "About", metaDescription: "The coolest current hip trends." }} />
+      <Seo seo={{ metaTitle: "Changelog", metaDescription: "The coolest current hip trends." }} />
       <section className="about-page">
         <div className="section-center about-center">
           <article className="about-text">
-            <Title className="text-left" title={strapiAbout.title} />
+            <Title cssName={pageLeftH3} cssUnderline={underline} title={strapiChangelog.title} />
 
             <BlocksRenderer blocks={blocks} />
           </article>
         </div>
-        
       </section>
       
     </Layout>
   )
 }
 
-export default AboutPage
+export default ChangelogPage

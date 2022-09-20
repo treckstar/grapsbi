@@ -9,7 +9,7 @@ const contact = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
-          <form action="https://formspree.io/xdowwgkr" method="POST">
+          <form action="" method="POST">
             <div className="form-group">
               <input
                 type="text"

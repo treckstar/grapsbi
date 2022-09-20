@@ -6,10 +6,7 @@ import Seo from "../components/seo"
 const Error = () => {
   return (
     <Layout>
-      <Seo
-        title="404 Page"
-        description="Page is Not Available. Go to HOME Page"
-      />
+      <Seo seo={{ metaTitle: "404", metaDescription: "Error - Page not found." }} />
       <main className="error-page">
         <h3>oops! it's a dead end</h3>
         <Link to="/" className="btn">
