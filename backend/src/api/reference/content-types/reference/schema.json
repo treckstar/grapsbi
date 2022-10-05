@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "references",
+  "info": {
+    "singularName": "reference",
+    "pluralName": "references",
+    "displayName": "Reference",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.slider",
+        "shared.quote",
+        "shared.rich-text",
+        "shared.media"
+      ]
+    }
+  }
+}
