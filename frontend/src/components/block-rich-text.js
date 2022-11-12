@@ -5,11 +5,18 @@ const BlockRichText = ({ data }) => {
   deckDeckGoHighlightElement()
   
   return (
-    <div className="prose max-h-min max-h-max max-h-fit mx-auto py-2" 
+    <>
+    <div className="sticky top-0 left-0"
+        dangerouslySetInnerHTML={{
+          __html: data.richTextBody.data.childMarkdownRemark.tableOfContents,
+        }}
+    />
+    <div className="prose max-h-fit mx-auto py-2" 
         dangerouslySetInnerHTML={{
           __html: data.richTextBody.data.childMarkdownRemark.html,
         }}
     />
+    </>
   )
 }
 
