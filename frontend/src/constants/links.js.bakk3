@@ -45,7 +45,6 @@ const tempLinks = data.map((link) => {
 // I KNOW WE CAN COMBINE IT !!!!!
 
 export default ({ styleClass }) => {
-  console.log(styleClass)
   if (styleClass != 'sidebar-links') {
     return (
       <ul className={navLinks}>

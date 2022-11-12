@@ -67,8 +67,6 @@ const Button = forwardRef(
       //   onUpdate: ({ opacity, z }) => {
       //     setShadowStyle({ opacity })
       //     setButtonStyle({ z, transformPerspective: 800 })
-      //     //console.log('opacity', opacity);
-      //     //console.log('z', z);
       //   },
       // })
 
@@ -84,7 +82,6 @@ const Button = forwardRef(
       //       z: -90 + 100 * progress,
       //       opacity: gsap.utils.wrapYoyo(0, 0.5, progress),
       //     })
-      //     console.log('progress', progress);
       //   },
       // })
 
@@ -99,31 +96,10 @@ const Button = forwardRef(
       //       friction: mouseIsHover ? 7.5 : 1,
       //     },
       //   })
-      //   console.log('mouseIsHover', mouseIsHover);
       // }, [mouseIsHover])
       const [isHovered, setHovered] = useState(false)
-
       const Component = tagName || Link
-
-      console.log('ref', ref)
-      console.log(ref)
-
       const cxxx = classNames(theme, {white})
-      console.log('theme', theme)
-      console.log(theme)
-      console.log('white', white)
-      console.log(white)
-      console.log('cxxx', cxxx)
-      console.log(cxxx)
-
-      function onComplete(d) {
-          console.log('Completed animating', d)
-          console.log('Animation completed')
-      }
-
-      function onUpdate(latest) {
-          console.log(latest.z, latest.opacity)
-      }
 
       return (
           <div
@@ -178,7 +154,6 @@ const Button = forwardRef(
                               restDelta: 1,
                           }}
                       />
-                      {/* onAnimationComplete={definition => { onComplete(definition) }}  onUpdate={onUpdate} */}
                   </motion.div>
                   <Component
                       className={cx(buttonLink, buttonClassName)}
