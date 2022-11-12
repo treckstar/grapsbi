@@ -30,8 +30,8 @@ const data = [
   },
   {
     id: 5,
-    text: "contact",
-    url: "/contact/",
+    text: "projects",
+    url: "/projects/",
   },
 ];
 
@@ -47,7 +47,7 @@ const tempLinks = data.map((link) => {
 export default ({ styleClass }) => {
   return (
     <ul className={navLinks}>
-      <li className={navLinksLi}><HeroPopover /></li>
+      {/*  <li className={navLinksLi}><HeroPopover /></li> */}
       {tempLinks}
     </ul>
   );
