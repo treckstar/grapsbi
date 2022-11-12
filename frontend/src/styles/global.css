@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Poppins, system-ui, sans-serif;
+  }
+}
+
+
+.testt:hover {
+  animation: scale-easeInElastic 1s linear 2 reverse;
+}
+
+.testt2:hover {
+   animation: scale-easeInElasticSlow 1.2s linear 2 reverse;
+}
+
+.wrappy:hover .testt3 {
+  animation: scale-easeInElastic 1s linear 2 reverse;
+}
+
+@keyframes scale-easeInElastic {
+	0%, 4%, 18% {
+		transform: scale(1);
+	}
+
+	8%, 14% {
+		transform: scale(0.99);
+	}
+
+	26%, 28% {
+		transform: scale(1.05);
+	}
+
+	40%, 42% {
+		transform: scale(0.98);
+	}
+
+	56%, 58% {
+		transform: scale(1.09);
+	}
+
+	72% {
+		transform: scale(0.95);
+	}
+
+	86% {
+		transform: scale(1.17);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes scale-easeInElasticSlow {
+	0%, 4%, 18% {
+		transform: scale(1);
+	}
+
+	8%, 14% {
+		transform: scale(0.99);
+	}
+
+	26%, 28% {
+		transform: scale(1.01);
+	}
+
+	40%, 42% {
+		transform: scale(0.98);
+	}
+
+	56%, 58% {
+		transform: scale(1.05);
+	}
+
+	72% {
+		transform: scale(0.95);
+	}
+
+	86% {
+		transform: scale(1.17);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
