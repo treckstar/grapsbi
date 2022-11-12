@@ -1,11 +1,10 @@
 import React from "react"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { StaticImage, getImage } from "gatsby-plugin-image"
 import Slider from "react-slick"
 // import "slick-carousel/slick/slick.css"
 // import "slick-carousel/slick/slick-theme.css"
 
 const BlockSlider = ({ data }) => {
-  console.log(data)
   return (
     <div className="container max-w-3xl py-8">
       <Slider
@@ -18,10 +17,11 @@ const BlockSlider = ({ data }) => {
         swipe={true}
       >
         {data.files.map((file) => (
-          <GatsbyImage
+          <img 
             key={file.id}
-            image={getImage(file.localFile)}
-            alt={file.alternativeText}
+            src={file.localFile.publicURL}
+            alt={` ${file.alternativeText}`}
+            
           />
         ))}
       </Slider>
