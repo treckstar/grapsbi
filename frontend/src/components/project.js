@@ -7,7 +7,7 @@ const Project = ({ id, description, title, github, desc, url, image }) => {
   return (
     <article className="project">
       {image && (
-        <div class="project-img" style={{position: 'relative', overflow: 'hidden'}}>
+        <div className="project-img" style={{position: 'relative', overflow: 'hidden'}}>
         <img 
         src={image?.localFile.publicURL}
         alt={image?.alternativeText}
@@ -50,7 +50,7 @@ const Project = ({ id, description, title, github, desc, url, image }) => {
 // For Projects Number => <span className="project-number">0{index + 1}.</span>
 
 Project.propTypes = {
-  id: PropTypes.number,
+  id: PropTypes.string,
   title: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,

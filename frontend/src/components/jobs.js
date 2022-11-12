@@ -43,7 +43,7 @@ const Jobs = () => {
             return (
               <button
                 aria-label="Company Name"
-                key={item.strapiId}
+                key={index}
                 onClick={() => setValue(index)}
                 className={`job-btn ${index === value && "active-btn"}`}
               >

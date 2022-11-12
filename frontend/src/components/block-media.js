@@ -1,5 +1,7 @@
 import React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import cx from 'classnames'
+
 
 const BlockMedia = ({ data }) => {
   const isVideo = data.file.mime.startsWith("video")
@@ -9,9 +11,10 @@ const BlockMedia = ({ data }) => {
       {isVideo ? (
         <p>TODO video</p>
       ) : (
-        <GatsbyImage
-          image={getImage(data.file.localFile)}
-          alt={data.file.alternativeText}
+        <img 
+          src={data.file.localFile.publicURL}
+          alt={` ${data.file.alternativeText}`}
+          
         />
       )}
     </div>
