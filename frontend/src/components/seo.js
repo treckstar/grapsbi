@@ -65,7 +65,7 @@ const Seo = ({ seo = {} }) => {
       )
     }
     if (fullSeo.shareImage) {
-      const imageUrl = fullSeo.shareImage.localFile.url
+      const imageUrl = fullSeo.shareImage.localFile.publicURL
       tags.push(
         {
           name: "image",
