@@ -1,0 +1,601 @@
+.minimal-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--background-grey);
+    transition: all .3s;
+}
+
+.error-container {
+  width: 100vw;
+  min-height: 100vh;
+
+  .error-nav {
+    .dark-mode {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      transform: scale(0.5);
+    }
+  }
+
+  .error-wrapper {
+    max-width: 840px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    .error-inner {
+      position: relative;
+      max-width: 540px;
+      margin: 0 auto;
+
+      .bg-number {
+        font-family: var(--ff-secondary);
+        position: absolute;
+        top: -58px;
+        left: -50px;
+        right: 0;
+        margin: 0 auto;
+        font-size: 24rem;
+        font-weight: 600;
+        opacity: 0.15;
+        z-index: 0;
+      }
+
+      img,
+      svg,
+      h3,
+      p,
+      .button-wrap {
+        position: relative;
+        z-index: 1;
+      }
+
+      img,
+      svg {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-family: var(--ff-secondary-1);
+        color: var(--dark-text);
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      p {
+        font-family: var(--ff-secondary);
+        font-size: 1.1rem;
+        margin-bottom: 16px;
+      }
+
+      .button-wrap {
+        .button {
+          min-width: 220px;
+          min-height: 50px;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .error-container {
+    .error-wrapper {
+      .error-inner {
+        .bg-number {
+          opacity: 0.09;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .error-container {
+    .error-wrapper {
+      padding-top: 60px;
+
+      .error-inner {
+        padding: 10px;
+
+        .bg-number {
+          top: -35px;
+          left: -18px;
+          right: 0;
+          font-size: 13rem;
+        }
+
+        img,
+        svg {
+          max-width: 345px;
+        }
+      }
+    }
+  }
+}
+div {
+    color: var(--dark-text);
+}
+.is-dark h1, .is-dark h2, .is-dark h3, .is-dark h4, .is-dark h5, .is-dark h6 {
+    color: var(--dark-dark-text);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+.is-dark .title, .is-dark .dark-inverted {
+    color: var(--dark-dark-text)!important;
+}
+.has-text-centered {
+    text-align: center;
+}
+.has-text-centered {
+    text-align: center!important;
+}
+html {
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+}
+:root {
+    --primary-dark-1: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 1%) );
+    --primary-dark-2: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 2%) );
+    --primary-dark-3: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 3%) );
+    --primary-dark-4: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 4%) );
+    --primary-dark-5: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 5%) );
+    --primary-dark-6: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 6%) );
+    --primary-dark-7: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 7%) );
+    --primary-dark-8: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 8%) );
+    --primary-dark-9: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 9%) );
+    --primary-dark-10: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 10%) );
+    --primary-dark-11: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 11%) );
+    --primary-dark-12: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 12%) );
+    --primary-dark-13: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 13%) );
+    --primary-dark-14: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 14%) );
+    --primary-dark-15: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 15%) );
+    --primary-dark-16: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 16%) );
+    --primary-dark-18: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 18%) );
+    --primary-dark-20: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 20%) );
+    --primary-dark-22: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 22%) );
+    --primary-dark-24: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 24%) );
+    --primary-dark-26: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 26%) );
+    --primary-dark-28: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 28%) );
+    --primary-dark-30: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 30%) );
+    --primary-dark-35: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 35%) );
+    --primary-dark-40: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 40%) );
+    --primary-dark-42: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 42%) );
+    --primary-dark-45: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 45%) );
+    --primary-dark-48: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 48%) );
+    --primary-dark-50: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 50%) );
+    --primary-dark-60: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 60%) );
+    --primary-dark-70: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 70%) );
+    --primary-dark-80: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 80%) );
+    --primary-dark-90: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) - 90%) );
+    --primary-light-1: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 1%) );
+    --primary-light-2: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 2%) );
+    --primary-light-3: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 3%) );
+    --primary-light-4: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 4%) );
+    --primary-light-5: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 5%) );
+    --primary-light-6: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 6%) );
+    --primary-light-7: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 7%) );
+    --primary-light-8: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 8%) );
+    --primary-light-9: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 9%) );
+    --primary-light-10: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 10%) );
+    --primary-light-11: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 11%) );
+    --primary-light-12: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 12%) );
+    --primary-light-13: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 13%) );
+    --primary-light-14: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 14%) );
+    --primary-light-15: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 15%) );
+    --primary-light-16: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 16%) );
+    --primary-light-18: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 18%) );
+    --primary-light-20: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 20%) );
+    --primary-light-22: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 22%) );
+    --primary-light-24: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 24%) );
+    --primary-light-26: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 26%) );
+    --primary-light-28: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 28%) );
+    --primary-light-30: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 30%) );
+    --primary-light-35: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 35%) );
+    --primary-light-40: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 40%) );
+    --primary-light-42: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 42%) );
+    --primary-light-45: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 45%) );
+    --primary-light-48: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 48%) );
+    --primary-light-50: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 50%) );
+    --primary-light-60: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 60%) );
+    --primary-light-70: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 70%) );
+    --primary-light-80: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 80%) );
+    --primary-light-90: hsl( var(--primary-h) var(--primary-s) calc(var(--primary-l) + 90%) );
+    --secondary-light-1: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 1%) );
+    --secondary-light-2: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 2%) );
+    --secondary-light-3: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 3%) );
+    --secondary-light-4: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 4%) );
+    --secondary-light-5: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 5%) );
+    --secondary-light-6: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 6%) );
+    --secondary-light-7: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 7%) );
+    --secondary-light-8: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 8%) );
+    --secondary-light-9: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 9%) );
+    --secondary-light-10: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 10%) );
+    --secondary-light-11: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 11%) );
+    --secondary-light-12: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 12%) );
+    --secondary-light-13: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 13%) );
+    --secondary-light-14: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 14%) );
+    --secondary-light-15: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 15%) );
+    --secondary-light-16: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 16%) );
+    --secondary-light-18: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 18%) );
+    --secondary-light-20: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 20%) );
+    --secondary-light-22: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 22%) );
+    --secondary-light-24: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 24%) );
+    --secondary-light-26: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 26%) );
+    --secondary-light-28: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 28%) );
+    --secondary-light-30: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 30%) );
+    --secondary-light-35: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 35%) );
+    --secondary-light-40: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 40%) );
+    --secondary-light-42: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 42%) );
+    --secondary-light-45: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 45%) );
+    --secondary-light-48: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 48%) );
+    --secondary-light-50: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 50%) );
+    --secondary-light-60: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 60%) );
+    --secondary-light-70: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 70%) );
+    --secondary-light-80: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 80%) );
+    --secondary-light-90: hsl( var(--secondary-h) var(--secondary-s) calc(var(--secondary-l) + 90%) );
+    --primary-grey-dark-4: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 4%) );
+    --primary-grey-dark-5: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 5%) );
+    --primary-grey-dark-8: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 8%) );
+    --primary-grey-dark-10: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 10%) );
+    --primary-grey-dark-15: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 15%) );
+    --primary-grey-dark-20: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 20%) );
+    --primary-grey-dark-30: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 30%) );
+    --primary-grey-dark-35: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 35%) );
+    --primary-grey-dark-40: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) - 40%) );
+    --primary-grey-light-2: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) + 2%) );
+    --primary-grey-light-3: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) + 3%) );
+    --primary-grey-light-5: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) + 5%) );
+    --primary-grey-light-6: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) + 6%) );
+    --primary-grey-light-10: hsl( var(--primary-grey-h) var(--primary-grey-s) calc(var(--primary-grey-l) + 10%) );
+    --danger-light-20: hsl( var(--danger-h) var(--danger-s) calc(var(--danger-l) + 20%) );
+    --danger-light-24: hsl( var(--danger-h) var(--danger-s) calc(var(--danger-l) + 24%) );
+    --danger-light-36: hsl( var(--danger-h) var(--danger-s) calc(var(--danger-l) + 36%) );
+    --danger-light-40: hsl( var(--danger-h) var(--danger-s) calc(var(--danger-l) + 40%) );
+    --warning-light-20: hsl( var(--warning-h) var(--warning-s) calc(var(--warning-l) + 20%) );
+    --warning-light-24: hsl( var(--warning-h) var(--warning-s) calc(var(--warning-l) + 24%) );
+    --warning-light-32: hsl( var(--warning-h) var(--warning-s) calc(var(--warning-l) + 32%) );
+    --info-shadow-from: hsl(var(--info-h) var(--info-s) var(--info-l) / 42%);
+    --info-shadow-to: hsl(var(--info-h) var(--info-s) var(--info-l) / 20%);
+    --info-light-20: hsl( var(--info-h) var(--info-s) calc(var(--info-l) + 20%) );
+    --info-light-24: hsl( var(--info-h) var(--info-s) calc(var(--info-l) + 24%) );
+    --info-light-45: hsl( var(--info-h) var(--info-s) calc(var(--info-l) + 45%) );
+    --success-light-20: hsl( var(--success-h) var(--success-s) calc(var(--success-l) + 20%) );
+    --success-light-24: hsl( var(--success-h) var(--success-s) calc(var(--success-l) + 24%) );
+    --success-light-40: hsl( var(--success-h) var(--success-s) calc(var(--success-l) + 40%) );
+    --success-light-45: hsl( var(--success-h) var(--success-s) calc(var(--success-l) + 45%) );
+    --success-light-48: hsl( var(--success-h) var(--success-s) calc(var(--success-l) + 48%) );
+    --purple-light-36: hsl( var(--purple-h) var(--purple-s) calc(var(--purple-l) + 36%) );
+    --purple-light-38: hsl( var(--purple-h) var(--purple-s) calc(var(--purple-l) + 38%) );
+    --lime-dark-1: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 1%) );
+    --lime-dark-2: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 2%) );
+    --lime-dark-3: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 3%) );
+    --lime-dark-4: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 4%) );
+    --lime-dark-5: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 5%) );
+    --lime-dark-6: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 6%) );
+    --lime-dark-7: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 7%) );
+    --lime-dark-8: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 8%) );
+    --lime-dark-9: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 9%) );
+    --lime-dark-10: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 10%) );
+    --lime-dark-11: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 11%) );
+    --lime-dark-12: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 12%) );
+    --lime-dark-13: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 13%) );
+    --lime-dark-14: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 14%) );
+    --lime-dark-15: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 15%) );
+    --lime-dark-16: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 16%) );
+    --lime-dark-18: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 18%) );
+    --lime-dark-20: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 20%) );
+    --lime-dark-22: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 22%) );
+    --lime-dark-24: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 24%) );
+    --lime-dark-26: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 26%) );
+    --lime-dark-28: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 28%) );
+    --lime-dark-30: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 30%) );
+    --lime-dark-35: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 35%) );
+    --lime-dark-40: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 40%) );
+    --lime-dark-42: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 42%) );
+    --lime-dark-45: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 45%) );
+    --lime-dark-48: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 48%) );
+    --lime-dark-50: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 50%) );
+    --lime-dark-60: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 60%) );
+    --lime-dark-70: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 70%) );
+    --lime-dark-80: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 80%) );
+    --lime-dark-90: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) - 90%) );
+    --lime-light-1: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 1%) );
+    --lime-light-2: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 2%) );
+    --lime-light-3: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 3%) );
+    --lime-light-4: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 4%) );
+    --lime-light-5: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 5%) );
+    --lime-light-6: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 6%) );
+    --lime-light-7: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 7%) );
+    --lime-light-8: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 8%) );
+    --lime-light-9: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 9%) );
+    --lime-light-10: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 10%) );
+    --lime-light-11: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 11%) );
+    --lime-light-12: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 12%) );
+    --lime-light-13: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 13%) );
+    --lime-light-14: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 14%) );
+    --lime-light-15: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 15%) );
+    --lime-light-16: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 16%) );
+    --lime-light-18: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 18%) );
+    --lime-light-20: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 20%) );
+    --lime-light-22: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 22%) );
+    --lime-light-24: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 24%) );
+    --lime-light-26: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 26%) );
+    --lime-light-28: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 28%) );
+    --lime-light-30: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 30%) );
+    --lime-light-35: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 35%) );
+    --lime-light-40: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 40%) );
+    --lime-light-42: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 42%) );
+    --lime-light-45: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 45%) );
+    --lime-light-48: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 48%) );
+    --lime-light-50: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 50%) );
+    --lime-light-60: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 60%) );
+    --lime-light-70: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 70%) );
+    --lime-light-80: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 80%) );
+    --lime-light-90: hsl( var(--lime-h) var(--lime-s) calc(var(--lime-l) + 90%) );
+    --blue-light-32: hsl( var(--blue-h) var(--blue-s) calc(var(--blue-l) + 32%) );
+    --blue-light-34: hsl( var(--blue-h) var(--blue-s) calc(var(--blue-l) + 34%) );
+    --red-light-38: hsl(var(--red-h) var(--red-s) calc(var(--red-l) + 38%));
+    --orange-light-18: hsl( var(--orange-h) var(--orange-s) calc(var(--orange-l) + 18%) );
+    --orange-light-20: hsl( var(--orange-h) var(--orange-s) calc(var(--orange-l) + 20%) );
+    --yellow-dark-8: hsl( var(--yellow-h) var(--yellow-s) calc(var(--yellow-l) - 8%) );
+    --yellow-light-22: hsl( var(--yellow-h) var(--yellow-s) calc(var(--yellow-l) + 22%) );
+    --green-light-15: hsl( var(--green-h) var(--green-s) calc(var(--green-l) + 15%) );
+    --green-light-22: hsl( var(--green-h) var(--green-s) calc(var(--green-l) + 22%) );
+    --green-light-23: hsl( var(--green-h) var(--green-s) calc(var(--green-l) + 23%) );
+    --smoke-white-dark-2: hsl( var(--smoke-white-h) var(--smoke-white-s) calc(var(--smoke-white-l) - 2%) );
+    --smoke-white-dark-8: hsl( var(--smoke-white-h) var(--smoke-white-s) calc(var(--smoke-white-l) - 8%) );
+    --smoke-white-dark-10: hsl( var(--smoke-white-h) var(--smoke-white-s) calc(var(--smoke-white-l) - 10%) );
+    --smoke-white-dark-16: hsl( var(--smoke-white-h) var(--smoke-white-s) calc(var(--smoke-white-l) - 16%) );
+    --smoke-white-light-2: hsl( var(--smoke-white-h) var(--smoke-white-s) calc(var(--smoke-white-l) + 2%) );
+    --placeholder-dark-8: hsl( var(--placeholder-h) var(--placeholder-s) calc(var(--placeholder-l) - 8%) );
+    --placeholder-light-10: hsl( var(--placeholder-h) var(--placeholder-s) calc(var(--placeholder-l) + 10%) );
+    --placeholder-light-16: hsl( var(--placeholder-h) var(--placeholder-s) calc(var(--placeholder-l) + 16%) );
+    --sidebar-dark-7: hsl( var(--sidebar-h) var(--sidebar-s) calc(var(--sidebar-l) - 7%) );
+    --sidebar-dark-12: hsl( var(--sidebar-h) var(--sidebar-s) calc(var(--sidebar-l) - 12%) );
+    --sidebar-light-5: hsl( var(--sidebar-h) var(--sidebar-s) calc(var(--sidebar-l) + 5%) );
+    --muted-grey-dark-25: hsl( var(--muted-grey-h) var(--muted-grey-s) calc(var(--muted-grey-l) - 25%) );
+    --muted-grey-light-14: hsl( var(--muted-grey-h) var(--muted-grey-s) calc(var(--muted-grey-l) + 14%) );
+    --muted-grey-light-15: hsl( var(--muted-grey-h) var(--muted-grey-s) calc(var(--muted-grey-l) + 15%) );
+    --fade-grey-dark-2: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 2%) );
+    --fade-grey-dark-3: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 3%) );
+    --fade-grey-dark-4: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 4%) );
+    --fade-grey-dark-5: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 5%) );
+    --fade-grey-dark-6: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 6%) );
+    --fade-grey-dark-8: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) - 8%) );
+    --fade-grey-light-2: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) + 2%) );
+    --fade-grey-light-3: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) + 3%) );
+    --fade-grey-light-4: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) + 4%) );
+    --fade-grey-light-5: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) + 5%) );
+    --fade-grey-light-6: hsl( var(--fade-grey-h) var(--fade-grey-s) calc(var(--fade-grey-l) + 6%) );
+    --widget-grey-dark-1: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 1%) );
+    --widget-grey-dark-2: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 2%) );
+    --widget-grey-dark-3: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 3%) );
+    --widget-grey-dark-4: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 4%) );
+    --widget-grey-dark-8: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 8%) );
+    --widget-grey-dark-12: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) - 12%) );
+    --widget-grey-light-1: hsl( var(--widget-grey-h) var(--widget-grey-s) calc(var(--widget-grey-l) + 1%) );
+    --dark-dark-text-light-14: hsl( var(--dark-dark-text-h) var(--dark-dark-text-s) calc(var(--dark-dark-text-l) + 14%) );
+    --dark-text-light-18: hsl( var(--dark-text-h) var(--dark-text-s) calc(var(--dark-text-l) + 18%) );
+    --dark-text-light-25: hsl( var(--dark-text-h) var(--dark-text-s) calc(var(--dark-text-l) + 25%) );
+    --dark-text-light-35: hsl( var(--dark-text-h) var(--dark-text-s) calc(var(--dark-text-l) + 35%) );
+    --light-text-dark-2: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 2%) );
+    --light-text-dark-4: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 4%) );
+    --light-text-dark-5: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 5%) );
+    --light-text-dark-6: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 6%) );
+    --light-text-dark-8: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 8%) );
+    --light-text-dark-10: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 10%) );
+    --light-text-dark-12: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 12%) );
+    --light-text-dark-20: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 20%) );
+    --light-text-dark-22: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) - 22%) );
+    --light-text-light-2: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) + 2%) );
+    --light-text-light-5: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) + 5%) );
+    --light-text-light-6: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) + 6%) );
+    --light-text-light-12: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) + 12%) );
+    --light-text-light-15: hsl( var(--light-text-h) var(--light-text-s) calc(var(--light-text-l) + 15%) );
+    --dark-sidebar-dark-2: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 2%) );
+    --dark-sidebar-dark-3: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 3%) );
+    --dark-sidebar-dark-4: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 4%) );
+    --dark-sidebar-dark-5: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 5%) );
+    --dark-sidebar-dark-6: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 6%) );
+    --dark-sidebar-dark-10: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 10%) );
+    --dark-sidebar-dark-12: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) - 12%) );
+    --dark-sidebar-light-1: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 1%) );
+    --dark-sidebar-light-2: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 2%) );
+    --dark-sidebar-light-3: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 3%) );
+    --dark-sidebar-light-4: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 4%) );
+    --dark-sidebar-light-5: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 5%) );
+    --dark-sidebar-light-6: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 6%) );
+    --dark-sidebar-light-7: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 7%) );
+    --dark-sidebar-light-8: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 8%) );
+    --dark-sidebar-light-9: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 9%) );
+    --dark-sidebar-light-10: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 10%) );
+    --dark-sidebar-light-12: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 12%) );
+    --dark-sidebar-light-14: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 14%) );
+    --dark-sidebar-light-15: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 15%) );
+    --dark-sidebar-light-16: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 16%) );
+    --dark-sidebar-light-18: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 18%) );
+    --dark-sidebar-light-20: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 20%) );
+    --dark-sidebar-light-22: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 22%) );
+    --dark-sidebar-light-25: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 25%) );
+    --dark-sidebar-light-55: hsl( var(--dark-sidebar-h) var(--dark-sidebar-s) calc(var(--dark-sidebar-l) + 55%) );
+    --landing-xxx-dark-2: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) - 2%) );
+    --landing-xxx-light-2: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 2%) );
+    --landing-xxx-light-4: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 4%) );
+    --landing-xxx-light-6: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 6%) );
+    --landing-xxx-light-8: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 8%) );
+    --landing-xxx-light-12: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 12%) );
+    --landing-xxx-light-14: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 14%) );
+    --landing-xxx-light-18: hsl( var(--landing-xxx-h) var(--landing-xxx-s) calc(var(--landing-xxx-l) + 18%) );
+    --landing-yyy-dark-6: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) - 6%) );
+    --landing-yyy-dark-12: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) - 12%) );
+    --landing-yyy-light-2: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) + 2%) );
+    --landing-yyy-light-4: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) + 4%) );
+    --landing-yyy-light-6: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) + 6%) );
+    --landing-yyy-light-8: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) + 8%) );
+    --landing-yyy-light-18: hsl( var(--landing-yyy-h) var(--landing-yyy-s) calc(var(--landing-yyy-l) + 18%) );
+}
+
+
+.is-dark {
+    --background-grey: var(--dark-sidebar-light-5);
+    --border: var(--dark-sidebar-light-12);
+    --primary-h: 159;
+    --primary-s: 85%;
+    --primary-l: 43%;
+    --dark-text-h: 232;
+    --dark-text-s: 14%;
+    --dark-text-l: 68%;
+    --dark-text: hsl(var(--dark-text-h) var(--dark-text-s) var(--dark-text-l));
+    --red-h: 324;
+    --red-s: 100%;
+    --red-l: 63%;
+    --red: hsl(var(--red-h) var(--red-s) var(--red-l));
+}
+
+:root {
+    --body-color: #f9f9f9;
+    --title-grey: #a9abac;
+    --background-grey: #f0f0f0;
+    --medium-grey: #ddd;
+    --light-grey: #eee;
+    --white: #fff;
+    --border: hsl(0deg 0% 86%);
+    --placeload-nuance-from: rgb(0 0 0 / 7%);
+    --placeload-nuance-to: rgb(0 0 0 / 15%);
+    --placeload-dark-nuance-from: rgb(255 255 255 / 15%);
+    --placeload-dark-nuance-to: rgb(255 255 255 / 24%);
+    --sidebar-h: 217;
+    --sidebar-s: 26%;
+    --sidebar-l: 27%;
+    --sidebar: hsl(var(--sidebar-h) var(--sidebar-s) var(--sidebar-l));
+    --primary-h: 153;
+    --primary-s: 48%;
+    --primary-l: 49%;
+    --primary: hsl(var(--primary-h) var(--primary-s) var(--primary-l));
+    --primary-grey-h: 0;
+    --primary-grey-s: 0%;
+    --primary-grey-l: 80%;
+    --primary-grey: hsl(var(--primary-grey-h) var(--primary-grey-s) var(--primary-grey-l));
+    --secondary-h: 222;
+    --secondary-s: 82%;
+    --secondary-l: 56%;
+    --secondary: hsl(var(--secondary-h) var(--secondary-s) var(--secondary-l));
+    --purple-h: 261;
+    --purple-s: 32%;
+    --purple-l: 55%;
+    --purple: hsl(var(--purple-h) var(--purple-s) var(--purple-l));
+    --blue-h: 198;
+    --blue-s: 100%;
+    --blue-l: 61%;
+    --blue: hsl(var(--blue-h) var(--blue-s) var(--blue-l));
+    --red-h: 345;
+    --red-s: 94%;
+    --red-l: 57%;
+    --red: hsl(var(--red-h) var(--red-s) var(--red-l));
+    --orange-h: 19;
+    --orange-s: 100%;
+    --orange-l: 75%;
+    --orange: hsl(var(--orange-h) var(--orange-s) var(--orange-l));
+    --yellow-h: 43;
+    --yellow-s: 100%;
+    --yellow-l: 72%;
+    --yellow: hsl(var(--yellow-h) var(--yellow-s) var(--yellow-l));
+    --green-h: 113;
+    --green-s: 59%;
+    --green-l: 71%;
+    --green: hsl(var(--green-h) var(--green-s) var(--green-l));
+    --pink-h: 344;
+    --pink-s: 100%;
+    --pink-l: 81%;
+    --pink: hsl(var(--pink-h) var(--pink-s) var(--pink-l));
+    --light-blue-h: 196;
+    --light-blue-s: 84%;
+    --light-blue-l: 71%;
+    --light-blue: hsl(var(--light-blue-h) var(--light-blue-s) var(--light-blue-l));
+    --lime-h: 168;
+    --lime-s: 56%;
+    --lime-l: 72%;
+    --lime: hsl(var(--lime-h) var(--lime-s) var(--lime-l));
+    --dark-h: 226;
+    --dark-s: 34%;
+    --dark-l: 24%;
+    --dark: hsl(var(--dark-h) var(--dark-s) var(--dark-l));
+    --link-h: 229;
+    --link-s: 53%;
+    --link-l: 53%;
+    --link: hsl(var(--link-h) var(--link-s) var(--link-l));
+    --info-h: 200;
+    --info-s: 97%;
+    --info-l: 45%;
+    --info: hsl(var(--info-h) var(--info-s) var(--info-l));
+    --success-h: 164;
+    --success-s: 95%;
+    --success-l: 43%;
+    --success: hsl(var(--success-h) var(--success-s) var(--success-l));
+    --warning-h: 35;
+    --warning-s: 95%;
+    --warning-l: 62%;
+    --warning: hsl(var(--warning-h) var(--warning-s) var(--warning-l));
+    --danger-h: 341;
+    --danger-s: 79%;
+    --danger-l: 53%;
+    --danger: hsl(var(--danger-h) var(--danger-s) var(--danger-l));
+    --smoke-white-h: 0;
+    --smoke-white-s: 0%;
+    --smoke-white-l: 99%;
+    --smoke-white: hsl(var(--smoke-white-h) var(--smoke-white-s) var(--smoke-white-l));
+    --placeholder-h: 0;
+    --placeholder-s: 0%;
+    --placeholder-l: 81%;
+    --placeholder: hsl(var(--placeholder-h) var(--placeholder-s) var(--placeholder-l));
+    --muted-grey-h: 0;
+    --muted-grey-s: 0%;
+    --muted-grey-l: 60%;
+    --muted-grey: hsl(var(--muted-grey-h) var(--muted-grey-s) var(--muted-grey-l));
+    --fade-grey-h: 0;
+    --fade-grey-s: 0%;
+    --fade-grey-l: 93%;
+    --fade-grey: hsl(var(--fade-grey-h) var(--fade-grey-s) var(--fade-grey-l));
+    --widget-grey-h: 228;
+    --widget-grey-s: 33%;
+    --widget-grey-l: 97%;
+    --widget-grey: hsl(var(--widget-grey-h) var(--widget-grey-s) var(--widget-grey-l));
+    --dark-dark-text-h: 240;
+    --dark-dark-text-s: 6%;
+    --dark-dark-text-l: 68%;
+    --dark-dark-text: hsl(var(--dark-dark-text-h) var(--dark-dark-text-s) var(--dark-dark-text-l));
+    --dark-text-h: 226;
+    --dark-text-s: 34%;
+    --dark-text-l: 24%;
+    --dark-text: hsl(var(--dark-text-h) var(--dark-text-s) var(--dark-text-l));
+    --light-text-h: 232;
+    --light-text-s: 14%;
+    --light-text-l: 68%;
+    --light-text: hsl(var(--light-text-h) var(--light-text-s) var(--light-text-l));
+    --dark-sidebar-h: 240;
+    --dark-sidebar-s: 4%;
+    --dark-sidebar-l: 14%;
+    --dark-sidebar: hsl(var(--dark-sidebar-h) var(--dark-sidebar-s) var(--dark-sidebar-l));
+    --landing-xxx-h: 225;
+    --landing-xxx-s: 25%;
+    --landing-xxx-l: 6%;
+    --landing-xxx: hsl(var(--landing-xxx-h) var(--landing-xxx-s) var(--landing-xxx-l));
+    --landing-yyy-h: 230;
+    --landing-yyy-s: 26%;
+    --landing-yyy-l: 13%;
+    --landing-yyy: hsl(var(--landing-yyy-h) var(--landing-yyy-s) var(--landing-yyy-l));
+}
