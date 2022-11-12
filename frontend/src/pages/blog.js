@@ -23,7 +23,7 @@ const Blog = () => {
     <Layout>
       <Seo title="Articles" description="Latest Articles by Treckstar" />
       <section className="blog-page">
-        <ArticlesGrid articles={allStrapiArticle.nodes} />
+        <ArticlesGrid articles={allStrapiArticle.nodes} title="Latest Articles by Treckstar" />
       </section>
     </Layout>
   )

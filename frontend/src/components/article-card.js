@@ -7,8 +7,6 @@ import {blog, blogWrapper} from './article-card.module.scss'
 
 
 const ArticleCard = ({ article }) => {
-  console.log(article.cover?.localFile.publicURL);
-  console.log(article);
   let delay = (article.strapi_id + 1) * 100
 
   return (
@@ -23,7 +21,7 @@ const ArticleCard = ({ article }) => {
         src={article.cover?.localFile.publicURL}
         alt={article.cover?.alternativeText}
         key={article.id}
-      />
+      /> 
       <div className="blog-card">
           <h3 className="font-bold text-neutral-700">{article.title}</h3>
           <p>{article.description}</p>
@@ -52,7 +50,7 @@ export const query = graphql`
     title
     description
     strapi_id
-    publishedAt(formatString: "MMM Do, YYYY h:mm a")
+    publishedAt(formatString: "MMM Do, YYYY")
     cover {
       alternativeText
       localFile {
