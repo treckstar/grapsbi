@@ -42,6 +42,40 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             })
         })
     }
+
+
+    const categoryPost = path.resolve('./src/templates/category-post.js')
+    const resultc = await graphql(
+        `
+            {
+                allStrapiCategory {
+                    nodes {
+                        name
+                        slug
+                    }
+                }
+            }
+        `
+    )
+    if (resultc.errors) {
+        reporter.panicOnBuild(
+            `There was an error loading your Strapi categories`,
+            resultc.errors
+        )
+        return
+    }
+    const categories = resultc.data.allStrapiCategory.nodes
+    if (categories.length > 0) {
+        categories.forEach((category) => {
+            createPage({
+                path: `/category/${category.slug}`,
+                component: categoryPost,
+                context: {
+                    slug: category.slug,
+                },
+            })
+        })
+    }
 }
 
 exports.onCreateWebpackConfig = ({ actions }) => {

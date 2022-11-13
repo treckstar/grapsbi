@@ -29,11 +29,13 @@ const Block = ({ block }) => {
 
 const BlocksRenderer = ({ blocks }) => {
   return (
-    <div>
-      {blocks.map((block, index) => (
-        <Block key={`${index}${block.__typename}`} block={block} />
-      ))}
-    </div>
+      <div className="blog-content-block-wrapper">
+          {blocks.map((block, index) => (
+              <div className="blog-content-block relative">
+                  <Block key={`${index}${block.__typename}`} block={block} />
+              </div>
+          ))}
+      </div>
   )
 }
 
@@ -46,6 +48,19 @@ export const query = graphql`
         data {
           id
           childMarkdownRemark {
+            tableOfContents(
+              maxDepth: 2
+            )
+            timeToRead
+            rawMarkdownBody
+            frontmatter {
+              title
+            }
+            wordCount {
+              paragraphs
+              sentences
+              words
+            }
             html
           }
         }

@@ -2,17 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import Seo from "../components/seo"
+import Cmp404A from "../components/error/cmp-404-a"
 
 const Error = () => {
   return (
     <Layout>
       <Seo seo={{ metaTitle: "404", metaDescription: "Error - Page not found." }} />
-      <main className="error-page">
-        <h3>oops! it's a dead end</h3>
-        <Link to="/" className="btn">
-          back to home
-        </Link>
-      </main>
+      <Cmp404A />
     </Layout>
   )
 }

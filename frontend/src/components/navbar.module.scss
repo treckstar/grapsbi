@@ -29,13 +29,9 @@ Navbar
     transform: translate3d(0px, 0px, 0px);
 }
 
- .text-logo {
-    margin-left: 0px;
-    margin-top: 0px;
-    transform: rotate3d(1, 1, 1, 358deg);
-    filter: none;
-    height: auto;
-    width: 175px;
+ .new-logo {
+    display: inline-block;
+    vertical-align: middle;
  }
 
  .navbar {

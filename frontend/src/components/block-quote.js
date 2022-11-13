@@ -4,10 +4,10 @@ import { FaQuoteLeft } from "@react-icons/all-files/fa/FaQuoteLeft"
 
 const BlockQuote = ({ data }) => {
   return (
-    <section className="section bg-grey">
-      <Title title={data.title} />
+    <section className="section-quote section bg-grey">
+      <Title title={data.title} cssName="section-quote-title" />
       <div
-        className="section-center quote-center fa-quote-left"
+        className="quote-center fa-quote-left"
         id="single-quote">
         <p>
           <FaQuoteLeft style={{ marginRight: "0.3em", color: "#49aeba" }} />

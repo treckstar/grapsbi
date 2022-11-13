@@ -27,20 +27,14 @@
 //       inrt.current.update(Math.min(dTime, 64))
 //       onUpdate && onUpdate(inrt.current.value, prevValue.current)
 //       //prevValue.current = { ...inrt.current.value }
-//       console.log('prevValue.current', prevValue.current)
-//       console.log('onUpdate', onUpdate)
 //     },
 //     [onUpdate]
 //   )
 
 //   useTicker(onFrame, !isRunning)
-//   console.log('isRunning', isRunning)
-
-
 //   useIsomorphicLayoutEffect(() => {
 //     return () => {
 //       inrt.current.stop()
-//       console.log('inrt.current.stop()');
 //     }
 //   }, [])
 
@@ -56,7 +50,6 @@
 
 //       if (perfectStop) inrt.current.perfectStop = perfectStop
 //     }
-//     console.log('value', value)
 //     inrt.current.to(value)
 //   }, [])
 //   const stop = useCallback(() => setIsRunning(false), [])

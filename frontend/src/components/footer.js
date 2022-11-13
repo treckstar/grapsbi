@@ -24,10 +24,18 @@ const Footer = () => {
           className={`footer-links ${footerLinks}`}
         ></SocialLinks>
         <h5 className={footerH5}>
-          &copy; {new Date().getFullYear()},<Link to="https://www.treckstar.net/" className={footerSocialLink} target="_blank"><span className={footerH5Span}> treckstar.net. </span></Link> Built with{" "}
-          <GrGatsbyjs title="GatsbyJs" className={footerH5Svg} />{"  "}<SiStrapi title="Strapi CMS" className={footerH5Svg}  /> and <FaReact title="ReactJs" className={footerH5Svg}  />
+          &copy; {new Date().getFullYear()},
+          <a href="https://www.treckstar.net/" className={footerSocialLink} target="_blank">
+            <span className={footerH5Span}> treckstar.net. </span>
+          </a> 
+          Built with{" "}
+          <GrGatsbyjs title="GatsbyJs" className={footerH5Svg} />{"  "}
+          <SiStrapi title="Strapi CMS" className={footerH5Svg}  /> and 
+          <FaReact title="ReactJs" className={footerH5Svg}  />
           <br />
-          Theme by  <Link to="https://www.johnsmilga.com/" className={footerSocialLink} target="_blank"><span className={footerH5Span}>John Smilga</span></Link>
+          Theme by  <a href="https://www.johnsmilga.com/" className={footerSocialLink} target="_blank">
+            <span className={footerH5Span}>John Smilga</span>
+          </a>
         </h5>
         
       </div>

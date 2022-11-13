@@ -57,7 +57,7 @@ Global Styles
 }
 
 body {
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-secondary-1);
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -81,7 +81,7 @@ h5 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
-  text-shadow: 0px 2px 1px white;
+  /* text-shadow: 0px 2px 1px white; */
   font-weight: 600;
 }
 h1 {
@@ -1159,6 +1159,15 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+.section-quote.section {
+  padding: 1rem;
+}
+.blog-content .section-quote-title {
+  margin-bottom: 1rem;
+}
+.blog-content .section-quote h3 {
+  font-size: 1.95rem;
+}
 .quote-center {
   display: grid;
   justify-content: center;
@@ -1326,30 +1335,30 @@ Contact Page
 Blog Template
 ===============
 */
-.blog-template {
-  padding: 5rem 0rem;
+.blog-content {
+  padding: 0rem 0rem;
   font-size: 1rem;
   background: var(--clr-white);
 }
-.blog-template h1,
-.blog-template h2,
-.blog-template h3,
-.blog-template h4,
-.blog-template h5 {
-  color: #3178f6;
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5 {
+  /* color: #3178f6; */
   letter-spacing: normal;
   font-weight: 600;
-  font-family: var(--ff-secondary-1);
+  font-family: var(--ff-secondary);
   text-transform: none;
 }
 
 .blog-template .blogbtn {
-  background-color: #3178f6;
+  /* background-color: #3178f6; */
   color: white;
 }
 
 .blog-template .blogbtn:hover {
-  background-color: #005eff;
+  /* background-color: #005eff; */
   color: white;
 }
 
@@ -1400,9 +1409,9 @@ Blog Template
   border-radius: var(--radius);
 }
 .blog-template img {
-  width: 60%;
+  /* width: 60%;
   height: 60%;
-  margin: 1rem;
+  margin: 1rem; */
 }
 @media screen and (max-width: 576px) {
   .blog-template pre {
@@ -1427,4 +1436,10 @@ Blog Template
 #nprogress {
   position: fixed;
   z-index: 100000;
+}
+
+
+.deckgo-highlight-code-carbon {
+  height: 50vh;
+  margin: 2rem 0;
 }

@@ -5,7 +5,7 @@ import ArticlesGrid from "../components/articles-grid"
 import Seo from "../components/seo"
 // ...GatsbyImageSharpFluid
 
-const Blog = () => {
+const Category = () => {
   const { allStrapiArticle, strapiGlobal } = useStaticQuery(graphql`
     query {
       allStrapiArticle {
@@ -21,12 +21,12 @@ const Blog = () => {
   `) 
   return (
     <Layout>
-      <Seo title="Articles" description="Latest Articles by Treckstar" />
+      <Seo title="Category" description="Latest Articles by Treckstar" />
       <section className="blog-page">
-        <ArticlesGrid articles={allStrapiArticle.nodes} title="Latest Articles by Treckstar" />
+        <ArticlesGrid articles={allStrapiArticle.nodes} />
       </section>
     </Layout>
   )
 }
 
-export default Blog
+export default Category

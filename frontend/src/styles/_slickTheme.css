@@ -1,25 +1,15 @@
-@charset 'UTF-8';
-
-/* Arrows */
 .slick-prev,
 .slick-next {
     font-size: 0;
     line-height: 0;
-
     position: absolute;
     top: 50%;
-
     display: block;
-
     width: 20px;
     height: 20px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
-
     cursor: pointer;
-
     color: transparent;
     border: none;
     outline: none;
@@ -44,7 +34,7 @@
 
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
-    opacity: .25;
+    opacity: 0.25;
 }
 
 .slick-prev:before,
@@ -53,7 +43,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 0.75;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -170,7 +160,7 @@
     content: '•';
     text-align: center;
 
-    opacity: .25;
+    opacity: 0.25;
     color: black;
 
     -webkit-font-smoothing: antialiased;
@@ -178,6 +168,6 @@
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .75;
+    opacity: 0.75;
     color: black;
 }
