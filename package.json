@@ -2,7 +2,7 @@
   "name": "treckstar-net-blog",
   "author": "Brandon Trecki <treckstar@gmail.com> (https://treckstar.net/)",
   "description": "Monorepo with Strapi & Gatsby",
-  "version": "2.0.0",
+  "version": "3.0.1",
   "license": "ISC",
   "private": true,
   "scripts": {
@@ -14,5 +14,6 @@
     "cross-env": "7.0.3",
     "npm-run-all": "4.1.5",
     "wait-on": "5.2.1"
-  }
+  },
+  "dependencies": {}
 }
