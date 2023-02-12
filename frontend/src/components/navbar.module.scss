@@ -80,6 +80,15 @@ Navbar
      display: none;
  }
 
+ .nav-links-a {
+    font-family: var(--ff-secondary);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    -webkit-font-smoothing: antialiased;
+
+ }
+
  @media screen and (min-width: 768px) {
      .toggle-btn {
          display: none;
@@ -125,5 +134,12 @@ Navbar
  @media screen and (min-width: 992px) {
      .navbar {
          background: transparent;
+         position: sticky;
+         background: rgba( 255, 255, 255, 0.35 );
+         box-shadow: 0 2px 5px 0 rgb(31, 38, 135,0.18);
+         backdrop-filter: blur( 4px );
+         -webkit-backdrop-filter: blur( 4px );
+         border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+         
      }
  }
