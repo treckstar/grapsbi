@@ -11,6 +11,7 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   --clr-primary-5: #2caeba;
+  --clr-primary-5-5: rgba(44, 174, 186, 0.282);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -62,7 +63,6 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 15px;
-  margin-top: 5rem;
 }
 
 ul {
