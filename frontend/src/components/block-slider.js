@@ -6,7 +6,7 @@ import Slider from "react-slick"
 
 const BlockSlider = ({ data }) => {
   return (
-    <div className="container max-w-3xl py-8">
+    <div className="container max-w-3xl mx-auto py-8">
       <Slider
         dots={true}
         infinite={true}

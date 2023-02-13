@@ -33,10 +33,10 @@ Variables
   --clr-black: rgb(23, 23, 23);
   --clr-white: #fff;
   --ff-primary: "Lobster", sans-serif;
-  --ff-secondary: "Poppins", sans-serif;
+  --ff-secondary: "Poppins", Helvetica, Arial, sans-serif;
   --ff-secondary-1: "Nunito Sans", sans-serif;
   --transition: all 0.3s linear;
-  --spacing: 0.1rem;
+  --spacing: 0.3px;
   --radius: 0.50rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -63,6 +63,8 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 ul {
@@ -121,6 +123,7 @@ p {
   h3,
   h4 {
     line-height: 1;
+    scroll-margin-top: 80px;
   }
 }
 /*  global classes */
@@ -1350,6 +1353,7 @@ Blog Template
   font-weight: 600;
   font-family: var(--ff-secondary);
   text-transform: none;
+  scroll-margin-top: 80px;
 }
 
 .blog-template .blogbtn {

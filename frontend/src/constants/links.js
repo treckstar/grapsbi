@@ -9,6 +9,11 @@ import {
 } from '../components/navbar.module.scss';
 const data = [
   {
+    id: 0,
+    text: "about",
+    url: "/about/",
+  },
+  {
     id: 1,
     text: "meta",
     url: "/meta/",

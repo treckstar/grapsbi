@@ -1,0 +1,16 @@
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5 {
+  /* color: #3178f6; */
+  letter-spacing: normal;
+  font-weight: 600;
+  font-family: var(--ff-secondary);
+  text-transform: none;
+  scroll-margin-top: 80px;
+}
+
+.blog-content h2 {
+    font-size: 35px;
+}

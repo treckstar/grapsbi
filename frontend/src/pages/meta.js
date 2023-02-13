@@ -5,7 +5,9 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Title from "../components/title";
 import BlocksRenderer from "../components/blocks-renderer"
-import Headings from "../components/headings"
+import Headings from '../components/headings'
+import PageHeading from '../components/page-heading'
+
 import cx from 'classnames'
 import {
   page,
@@ -34,7 +36,8 @@ const MetaPage = () => {
 
   return (
     <Layout>
-      <Seo seo={{ metaTitle: "Meta", metaDescription: "The coolest current hip trends." }} />
+      <Seo seo={{ metaTitle: "Meta", metaDescription: "The coolest current sick trends." }} />
+      <PageHeading />
       <section className={page}>
         <div className={cx(sectionCenter, pageCenter)}>
             <StaticImage

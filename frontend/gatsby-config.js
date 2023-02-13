@@ -17,6 +17,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-pnpm`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -247,7 +248,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Lobster:400,500,600,700', 'Poppins:400,500,600,700', 'Open Sans', 'Nunito Sans:400,500,600,700']
+          families: ['Lobster:400,500,600,700', 'Poppins:400,500,600,700', 'Cabin:400,500,600,700', 'Open Sans', 'Nunito Sans:400,500,600,700']
         }
       },
     },

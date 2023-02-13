@@ -17,17 +17,42 @@ const componentsMap = {
 
 const Block = ({ block }) => {
   //deckDeckGoHighlightElement()
+  console.log(block);
+
 
   const Component = componentsMap[block.__typename]
 
   if (!Component) {
+
+    console.log('!Component')
+    console.log(block.__typename)
     return null
+  }
+
+  if (block.__typename == 'STRAPI__COMPONENT_SHARED_RICH_TEXT') {
+      console.log()
   }
 
   return <Component data={block} />
 }
 
 const BlocksRenderer = ({ blocks }) => {
+  console.log('blocks')
+  console.log(blocks)
+  let minsTotal = 0;
+  let tocsTotal = '';
+
+  blocks.map((b, index) => {
+    if (b.__typename == 'STRAPI__COMPONENT_SHARED_RICH_TEXT') {
+      tocsTotal = tocsTotal + b.richTextBody.data.childMarkdownRemark.tableOfContents
+      minsTotal = minsTotal + parseInt(b.richTextBody.data.childMarkdownRemark.timeToRead)
+    }
+  })
+
+  console.log(tocsTotal)
+  console.log(minsTotal)
+
+
   return (
       <div className="blog-content-block-wrapper">
           {blocks.map((block, index) => (

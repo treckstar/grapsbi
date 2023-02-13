@@ -11,7 +11,7 @@ import {
     sectionCenter,
     pageText,
     pageImg,
-    pageLeftH3,
+    pageCenterH3,
     underline,
 } from './page.module.scss'
 
@@ -37,9 +37,9 @@ const ChangelogPage = () => {
     <Layout>
       <Seo seo={{ metaTitle: "Changelog", metaDescription: "The coolest current hip trends." }} />
       <section className="about-page">
-        <div className="section-center about-center">
-          <article className="about-text">
-            <Title cssName={pageLeftH3} cssUnderline={underline} title={strapiChangelog.title} />
+        <div className="section-center">
+          <article className="">
+            <Title cssName={pageCenterH3} cssUnderline={underline} title={strapiChangelog.title} />
 
             <BlocksRenderer blocks={blocks} />
           </article>

@@ -11,7 +11,7 @@ import {
     sectionCenter,
     pageText,
     pageImg,
-    pageLeftH3,
+    pageCenterH3,
     underline,
 } from './page.module.scss'
 const ReferencePage = () => {
@@ -36,13 +36,13 @@ const ReferencePage = () => {
     <Layout>
       <Seo seo={{ metaTitle: "Reference", metaDescription: "The coolest current hip trends." }} />
       <section className="about-page">
-        <div className="section-center about-center">
-          <article className="about-text">
-            <Title title={strapiReference.title} />
+        <div className="section-center ">
+          <article className="">
+            <Title className={pageCenterH3} title={strapiReference.title} />
           </article>
         </div>
         <div className="section">
-          <article className="about-text">
+          <article className="">
             <BlocksRenderer blocks={blocks} />
           </article>
         </div>
