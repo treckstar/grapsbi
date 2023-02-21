@@ -74,6 +74,9 @@ a {
   text-decoration: none;
 }
 
+.font-poppins {
+  font-family: var(--ff-secondary-1);
+}
 h1,
 h2,
 h3,
@@ -180,7 +183,9 @@ object {
     width: 95vw;
   }
 }
-
+.ff-sec {
+    font-family: var(--ff-secondary);
+}
 .underline {
   width: 5rem;
   height: 0.25rem;

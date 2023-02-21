@@ -1,0 +1,21 @@
+.table-of-contents {
+    position: relative;
+
+    .table-of-contents-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+
+        ::before {
+            content: "";
+            width: 48px;
+            height: 1px;
+            background: currentColor;
+            vertical-align: middle;
+            display: inline-block;
+            margin-right: 12px;
+        }
+    }
+}
+

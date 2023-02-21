@@ -7,16 +7,12 @@
 }
 
 .mx-auto {
-    margin-left: auto!important;
-    margin-right: auto!important;
 }
 
 .side-section.is-bordered {
-    border-bottom: 1px solid var(--border)
 }
 
 .side-section.is-inverted.is-bordered {
-    border-bottom-color: var(--dark-border)
 }
 
 .spinner-container {
@@ -33,20 +29,33 @@
     left: 0
 }
 
-.spinner-container .spinner-layer.layer-1 {
+.spinner-container .layer-1 {
     animation: rotation 48s linear infinite
 }
 
-.spinner-container .spinner-layer.layer-2 {
+.spinner-container .layer-2 {
     animation: rotation 34s linear infinite
 }
 
-.spinner-container .spinner-layer.layer-3 {
+.spinner-container .layer-3 {
     animation: rotation 21s linear infinite
 }
 
-.spinner-container .spinner-layer.layer-4 {
+.spinner-container .layer-4 {
     animation: rotation 15s linear infinite
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+.rotating {
+    animation: rotation 4s infinite linear
 }
 
 .iconify {

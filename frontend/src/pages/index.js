@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import ArticlesGrid from "../components/articles-grid"
 import Seo from "../components/seo"
 import Hero from "../components/hero"
+import Tech from '../components/tech'
 import Services from "../components/services"
 import ChartRadar from "../components/chart-radar"
 import Jobs from "../components/jobs"
@@ -57,6 +58,7 @@ const IndexPage = () => {
     <Layout>
       <Seo />
       <Hero />
+      <Tech />
       <Services />
       <ChartRadar />
       <Jobs />
