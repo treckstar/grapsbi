@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
-import BlogNav from '../components/blog-nav'
 import BlocksRenderer from '../components/blocks-renderer'
 import Seo from '../components/seo'
 import Toc from '../components/toc'
@@ -25,7 +24,6 @@ const ArticlePage = ({ data }) => {
     return (
         <Layout as="article">
             <Seo seo={seo} />
-            {/* <BlogNav /> */}
             <nav className="supports-backdrop-blur:bg-white/30 sticky top-0 z-300 w-full flex-none bg-slate-100/95 backdrop-blur transition-colors duration-500 dark:border-slate-50/[0.06] dark:bg-emerald-100/10 lg:border-b lg:border-t lg:border-slate-900/10">
                 <div className="mx-4 border-y border-slate-900/10 py-4 dark:border-slate-300/30 lg:mx-0 lg:border-0 lg:px-8">
                     <div className="block w-full flex-grow sm:flex sm:w-auto sm:items-center">
