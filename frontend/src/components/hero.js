@@ -35,15 +35,15 @@ const Hero = ({ query }) => {
   //   }, [progress])
     
   return (
-    <header className={hero}>
-      <div className={cx(sectionCenter, heroCenter)}>
-          {/* <StaticImage
+      <header className={hero}>
+          <div className={cx(sectionCenter, heroCenter)}>
+              {/* <StaticImage
           src="../assets/hero-img.png"
           alt="portfolio"
           className={heroImg}
           placeholder="blurred"
         /> */}
-        {/* <StaticImage
+              {/* <StaticImage
           src="../assets/promotion.inline.svg"
           alt="portfolio"
           className={cx(heroImg, heroImgNew, heroHidden)}
@@ -55,44 +55,66 @@ const Hero = ({ query }) => {
           className={cx(heroImg, heroImgNew)}
           placeholder="blurred"
         /> */}
-        <div  className={cx(heroSvg, heroSvgNew)}>
-          <HeroFrontSwerve />
-          </div>
-        <article className={heroInfo}>
-          <div>
-            <div className={`underline ${underline}`}></div>
-            <h3 className={cx(heroHeadline, heroNomargin)}>I'm Brandon</h3>
-            <h4 className={cx(heroSubHeadline, heroNomargin)}>
-              {" "}
-              <TextLoop className={`text-loop ${textLoop}`}>
-                <span className={textLoopWidth}>Puppeteer does more than test</span>
-                <span className={textLoopWidth}>10+ yrs in Web Dev.</span>
-                <span className={textLoopWidth}>Gatsby, Strapi, & CSS Modules</span>
-                <span className={textLoopWidth}>Website still in development</span>
-                <span className={textLoopWidth}>Button animation from strapi.com</span>
-                <span className={textLoopWidth}>GSAP + Framer Motion</span>
-                <span className={textLoopWidth}>Don't forget TailwindCSS</span>
-                <span className={textLoopWidth}>HeadlessUI + ReactUI</span>
-              </TextLoop>{" "}
-              
-            </h4>
-            {/* <Link to="/contact" className={`btn ${heroBtnContact} ${btn}`} aria-label="Contact Me">
+              <div className={cx(heroSvg, heroSvgNew)}>
+                  <HeroFrontSwerve />
+              </div>
+              <article className={heroInfo}>
+                  <div>
+                      <div className={`underline ${underline}`}></div>
+                      <h3
+                          className={cx(
+                              heroHeadline,
+                              heroNomargin,
+                              ` bg-gradient-to-t from-teal-900 to-teal-700 mb-8 bg-clip-text tracking-tight text-transparent bg-transparent mt-6 font-poppins font-semibold`
+                          )}>
+                          I'm Brandon
+                      </h3>
+                      <h4 className={cx(heroSubHeadline, heroNomargin)}>
+                          {' '}
+                          <TextLoop className={`text-loop ${textLoop}`}>
+                              <span className={textLoopWidth}>
+                                  Puppeteer does more than test
+                              </span>
+                              <span className={textLoopWidth}>
+                                  10+ yrs in Web Dev.
+                              </span>
+                              <span className={textLoopWidth}>
+                                  Gatsby, Strapi, & CSS Modules
+                              </span>
+                              <span className={textLoopWidth}>
+                                  Website still in development
+                              </span>
+                              <span className={textLoopWidth}>
+                                  Button animation from strapi.com
+                              </span>
+                              <span className={textLoopWidth}>
+                                  GSAP + Framer Motion
+                              </span>
+                              <span className={textLoopWidth}>
+                                  Don't forget TailwindCSS
+                              </span>
+                              <span className={textLoopWidth}>
+                                  HeadlessUI + ReactUI
+                              </span>
+                          </TextLoop>{' '}
+                      </h4>
+                      {/* <Link to="/contact" className={`btn ${heroBtnContact} ${btn}`} aria-label="Contact Me">
               Contact me
             </Link> */}
-            <Button
-            tagName="a"
-            className={cx(button, heroBtnContact)}
-            buttonClassName={cx(buttonLink, btnLink)}
-            theme="greenGray"
-            size={smallPadding}
-            href="/contact/">
-            Contact Me
-            </Button>
-            <SocialLinks aria-label="Social Links" />
+                      <Button
+                          tagName="a"
+                          className={cx(button, heroBtnContact)}
+                          buttonClassName={cx(buttonLink, btnLink)}
+                          theme="greenGray"
+                          size={smallPadding}
+                          href="/contact/">
+                          Contact Me
+                      </Button>
+                      <SocialLinks aria-label="Social Links" />
+                  </div>
+              </article>
           </div>
-        </article>
-      </div>
-    </header>
+      </header>
   )
 }
 

@@ -13,7 +13,7 @@ const BlogNav = ({ children }) => {
         <nav className={`supports-backdrop-blur:bg-white/30 ${blogNavNavbar}`}>
             <div className={` ${blogNavNavbarBorder}`}>
                 <div className={` ${blogNavNavbarBlock}`}>
-                    <div className={` ${blogNavNavbarContainer}`}>
+                    <div className={`mx-auto  ${blogNavNavbarContainer}`}>
                         {children}
                         <button
                             className="testt2 mx-2 flex items-center rounded-md bg-white py-[0.6375rem] px-[1.243rem] text-sm font-semibold shadow transition-transform lg:pr-3"

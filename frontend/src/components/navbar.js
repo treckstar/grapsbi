@@ -11,7 +11,7 @@ import {
   newLogo,
   textLogoWrapper,
   textLogoWrapperDone,
-  navbar,
+  navBar,
   navCenter,
   navHeader,
   toggleBtn,
@@ -24,7 +24,7 @@ import { FaAlignRight } from "@react-icons/all-files/fa/FaAlignRight"
 
 const Navbar = ({ toggleSidebar }) => {
   return (
-    <nav className={navbar}>
+    <nav className={navBar}>
       <div className={navCenter}>
         <div className={navHeader}>
           <div className={textLogoWrapper}>
