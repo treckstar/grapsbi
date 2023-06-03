@@ -154,7 +154,7 @@ const ArticlePage = ({ data }) => {
             <main className="bg-white pt-8 pb-16 dark:bg-gray-900 lg:pt-16 lg:pb-24">
                 <div className="mx-auto flex justify-between px-4">
                     <article className="format format-sm sm:format-base lg:format-lg format-blue dark:format-invert mx-auto w-full ">
-                        <header className="not-format mb-4 lg:mb-6 max-w-screen-xl mx-auto grid grid-cols-2 gap-4 flex align-center justify-center items-center">
+                        <header className="not-format mb-4 lg:mb-6 max-w-screen-xl mx-auto grid grid-cols-2 gap-4 align-center justify-center items-center">
                             <div className="title-side">
                                 <h1 className="mb-4 text-2xl font-bold leading-tight text-gray-900 dark:text-white lg:mb-6 lg:text-5xl">
                                     {article.title}

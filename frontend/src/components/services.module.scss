@@ -4,18 +4,15 @@ Services
 ===============
 */
 .service {
-    background: var(--clr-white);
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     border-radius: var(--radius);
     text-align: center;
-    -webkit-transition: var(--transition);
     transition: var(--transition);
-    background: rgba( 255, 255, 255, 0.35 );
-    box-shadow: 0 2px 5px 0 rgb(31, 38, 135,0.18);
+    background: rgb( 255 255 255 / 35% );
+    box-shadow: 0 2px 5px 0 rgb(31 38 135 / 18%);
     backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-bottom: 1px solid rgb( 255 255 255 / 18% );
 }
 
 .service-icon {
@@ -27,12 +24,12 @@ Services
 .service .underline {
     width: 3rem;
     height: 0.12rem;
-    -webkit-transition: var(--transition);
+    transition: var(--transition);
     transition: var(--transition);
 }
 
 .service p {
-    -webkit-transition: var(--transition);
+    transition: var(--transition);
     transition: var(--transition);
     color: #000;
 }
@@ -59,23 +56,23 @@ Services
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
     .canvas-container {
         height: 50vh;
     }
 }
 
-@media screen and (min-width: 676px) {
+@media screen and (width >= 676px) {
     .services-center {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        -webkit-column-gap: 2rem;
-        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+        column-gap: 2rem;
         column-gap: 2rem;
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (width >= 992px) {
     .services-center {
         grid-template-columns: 1fr 1fr 1fr;
     }

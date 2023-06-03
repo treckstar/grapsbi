@@ -10,12 +10,6 @@
     box-sizing: border-box;
 }
 
-.side-section.is-bordered {
-}
-
-.side-section.is-inverted.is-bordered {
-}
-
 .spinner-container {
     position: relative
 }
@@ -45,12 +39,13 @@
 .spinner-container .layer-4 {
     animation: rotation 15s linear infinite
 }
+
 @keyframes rotation {
     0% {
         transform: rotate(0)
     }
 
-    to {
+    100% {
         transform: rotate(359deg)
     }
 }
@@ -80,14 +75,14 @@
     transform: translate(5px)!important
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: portrait) {
     .spinner-container {
         max-width:580px;
         margin: 0 auto
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (width >= 768px) and (width <= 1024px) and (orientation: landscape) {
     .side-section .title.is-2 {
         font-size:2rem
     }

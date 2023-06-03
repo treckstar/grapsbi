@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-plugin-minify-classnames`,
       options: {
         // dictionary: 'trecksa137',
-        enable: true,
+        enable: false,
         prefix: '__',
         // suffix: '__'
       }

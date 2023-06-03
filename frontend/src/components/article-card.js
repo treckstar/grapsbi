@@ -3,8 +3,6 @@ import { Link, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import cx from 'classnames'
 
-import {blog, blogWrapper} from './article-card.module.scss'
-
 
 const ArticleCard = ({ article }) => {
   let delay = (article.strapi_id + 1) * 100

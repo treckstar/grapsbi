@@ -55,18 +55,23 @@
     0% {
         opacity: 0;
     }
+
     39% {
         opacity: 0;
     }
+
     40% {
         opacity: 1;
     }
+
     60% {
         opacity: 1;
     }    
+
     61% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
@@ -203,56 +208,66 @@
 @keyframes bent_leg_fadein {
     0% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 
     8% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 
     9% {
         transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
         opacity: 1;
-        /*visibility: visible;*/
+
+        /* visibility: visible; */
     }
 
     29% {
         transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
         opacity: 1;
-        /*visibility: visible;*/
+
+        /* visibility: visible; */
     }
 
     30% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 
     60% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 
     61% {
         transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
         opacity: 1;
-        /*visibility: visible;*/
+
+        /* visibility: visible; */
     }
 
     84% {
         transform: matrix(0.82085169, 0, 0, 0.93559617, 112.73803, 21.601044);
         opacity: 1;
-        /*visibility: visible;*/
+
+        /* visibility: visible; */
     }
 
     85% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 
     100% {
         opacity: 0;
-        /*visibility: hidden;*/
+
+        /* visibility: hidden; */
     }
 }
 

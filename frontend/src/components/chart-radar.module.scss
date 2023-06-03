@@ -3,7 +3,7 @@
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (width <= 767px) {
     .canvas-container {
         height: 50vh;
     }

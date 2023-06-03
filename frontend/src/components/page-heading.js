@@ -32,7 +32,7 @@ const PageHeading = ({}) => {
                                     width="1em"
                                     height="1em"
                                     viewBox="0 0 24 24"
-                                    dataIcon="feather:arrow-right"
+                                    dataicon="feather:arrow-right"
                                     className="iconify iconify--feather">
                                     <path
                                         fill="none"

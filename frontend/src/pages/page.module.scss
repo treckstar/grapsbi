@@ -8,18 +8,13 @@
     text-transform: capitalize;
     letter-spacing: 1px;
     font-size: 0.7rem;
-}
-
-.page-stack span {
     margin-top: 0.5rem;
 }
+
 
 .page {
     background: var(--clr-grey-10);
     min-height: calc(100vh - 5rem - 9rem);
-}
-
-.page {
     padding: 7rem 0;
 }
 
@@ -69,7 +64,7 @@
     max-width: 1170px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (width >= 992px) {
     .section-center {
         width: 95vw;
     }
@@ -108,7 +103,6 @@
 }
 
 #single-quote>.fa-quote-left {
-    // float: left;
     font-size: 2em;
 }
 
@@ -124,11 +118,7 @@
     line-height: 1.5em;
 }
 
-// .about-steve {
-
-// }
-
-@media screen and (min-width: 992px) {
+@media screen and (width >= 992px) {
     .page-center {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -173,8 +163,4 @@
         margin: 0 3em;
         line-height: 1.5em;
     }
-
-    // .about-steve {
-    //     float: right;
-    // }
 }
