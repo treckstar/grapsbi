@@ -1,6 +1,6 @@
 import React from "react"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Script } from "gatsby"
 
 const Seo = ({ seo = {} }) => {
   const { strapiGlobal } = useStaticQuery(graphql`
@@ -104,7 +104,18 @@ const Seo = ({ seo = {} }) => {
         },
       ]}
       meta={metaTags}
-    />
+    >
+      <Script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-WZ2LN3QBQP" />
+      <Script type="text/javascript">
+      {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-WZ2LN3QBQP');
+      `}
+      </Script>
+    </Helmet>
   )
 }
 
