@@ -2,7 +2,7 @@
   "name": "treckstar-net-strapi",
   "private": true,
   "description": "Fresh update to website powered by Strapi.",
-  "version": "4.4.5",
+  "version": "4.10.0",
   "author": "Brandon Trecki <treckstar@gmail.com>",
   "scripts": {
     "develop": "NODE_ENV=development strapi develop",
@@ -11,21 +11,23 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@strapi/plugin-graphql": "^4.4.5",
-    "@strapi/plugin-i18n": "4.4.5",
-    "@strapi/plugin-users-permissions": "4.4.5",
-    "@strapi/provider-email-nodemailer": "^4.4.5",
-    "@strapi/strapi": "4.4.5",
+    "@strapi/plugin-documentation": "^4.10.5",
+    "@strapi/plugin-graphql": "^4.10.0",
+    "@strapi/plugin-i18n": "^4.10.0",
+    "@strapi/plugin-users-permissions": "^4.10.0",
+    "@strapi/provider-email-nodemailer": "^4.10.0",
+    "@strapi/strapi": "^4.10.0",
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
-    "mysql": "2.18.1"
+    "mysql": "2.18.1",
+    "strapi-plugin-navigation": "^2.2.8"
   },
-  "devDependencies": {},
   "strapi": {
     "uuid": "5bfcb9a2-f696-405e-ba9a-45fbae28aebb",
     "template": "@strapi/template-blog@^2.0.0",
-    "starter": "@strapi/starter-gatsby-blog"
+    "starter": "@strapi/starter-gatsby-blog",
+    "telemetryDisabled": false
   },
   "engines": {
     "node": ">=12.x.x <=16.x.x",

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_responses",
+  "info": {
+    "singularName": "contact-response",
+    "pluralName": "contact-responses",
+    "displayName": "Contact Response"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Message": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "Ip": {
+      "type": "string"
+    },
+    "Meta": {
+      "type": "string"
+    }
+  }
+}
