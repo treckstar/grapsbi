@@ -15,7 +15,7 @@ import {
 const Projects = ({ projects, title, showLink }) => {
   return (
     <section className="section projects">
-      <Title title={title} />
+      <Title title={title} cssName="section-center-title" />
       <div className="section-center projects-center">
         {projects.map((project, index) => {
           return <Project key={project.id} index={index} {...project} />;

@@ -27,7 +27,7 @@ const PageHeading = ({}) => {
                                 <span className="action-link">Learn more</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    ariaHidden="true"
+                                    arria-hidden="true"
                                     role="img"
                                     width="1em"
                                     height="1em"

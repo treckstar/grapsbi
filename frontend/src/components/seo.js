@@ -95,6 +95,7 @@ const Seo = ({ seo = {} }) => {
   const metaTags = getMetaTags()
 
   return (
+    <>
     <Helmet
       title={fullSeo.metaTitle}
       link={[
@@ -104,7 +105,8 @@ const Seo = ({ seo = {} }) => {
         },
       ]}
       meta={metaTags}
-    >
+    />
+    
       <Script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-WZ2LN3QBQP" />
       <Script type="text/javascript">
       {`
@@ -115,7 +117,7 @@ const Seo = ({ seo = {} }) => {
       gtag('config', 'G-WZ2LN3QBQP');
       `}
       </Script>
-    </Helmet>
+    </>
   )
 }
 

@@ -5,7 +5,7 @@ import ArticleCard from "./article-card"
 const ArticlesGrid = ({ articles, title = "Articles"}) => {
   return (
     <section className="section">
-      <Title title={title} />
+      <Title title={title} cssName="section-center-title" />
       <div className="section-center blogs-center">
         
         {
